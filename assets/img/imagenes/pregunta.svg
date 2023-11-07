@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021.5 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.8076mm" height="2.8076mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 33.5 33.5"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="766" font-variant="normal" style="fill-rule:nonzero" font-weight="700">
+	<font-face 
+		font-family="Montserrat">
+		<font-face-src>
+			<font-face-name name="Montserrat Bold"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="?" horiz-adv-x="589" d="M217.016 243.014l150.968 0c0,105.977 168.017,123.998 168.017,283.996 0,118.004 -103.993,184.984 -253.989,184.984 -135.013,0 -229.003,-51.9964 -283.024,-134l121.001 -70.9889c31.9916,46.0031 80.9913,73.9856 145.015,73.9856 64.9955,0 108.002,-30.9792 108.002,-79.9789 0,-87.0252 -155.989,-118.004 -155.989,-257.998zm75.9699 -251.033c56.0055,0 96.0152,41.0221 96.0152,91.0343 0,50.984 -40.0097,88.969 -96.0152,88.969 -56.0055,0 -95.9747,-37.9849 -95.9747,-88.969 0,-50.0121 39.9692,-91.0343 95.9747,-91.0343z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Montserrat";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .fil1 {fill:#FEFEFE}
+    .fil0 {fill:#0B2E59}
+    .fnt0 {font-weight:bold;font-size:29.47px;font-family:'Montserrat'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <circle class="fil0" cx="16.75" cy="16.75" r="16.75"/>
+  <g transform="matrix(0.999936 0 0 1 158.148 -945.967)">
+   <text x="-149.06" y="973.53"  class="fil1 fnt0">?</text>
+  </g>
+ </g>
+</svg>

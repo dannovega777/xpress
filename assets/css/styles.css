@@ -1,0 +1,399 @@
+*{font-family:Montserrat;}
+
+a {text-decoration: none;
+      color: #ffffff;
+      font-size: 1.3rem;
+      line-height: 1em;}
+
+hr {width: 97%;
+      border: #0B2E59 solid 0.15rem;}
+
+h4 {color: #7AB317;
+      margin: 0.8rem 2.4rem;
+      font-size: 1.5rem;
+      margin-bottom: -0.5rem;}
+
+p {font-size: 1.8rem;
+      color: #0B2E59;
+      text-align: center;}
+
+/*index.html*/
+.hr-index {width: 97%;
+border: #ffffff solid 0.15rem;}
+
+.login-container {width: 100vw;
+      height: 7rem; 
+      background-color: #0B2E59;
+      display: flex;
+      justify-content:space-between; 
+      box-shadow: 0 1px 4px #ffffff;}
+
+/*imagen de logo de navbar*/
+.logo {width: 16rem;
+      margin: 1rem 2rem 0.5rem 2rem;}
+
+.texto-bienvenida {
+      position: absolute;
+      top: 30%;
+      left: 10%;
+      text-align: justify;
+      font-size: 4.18rem;
+      color: #ffffff;
+      line-height: 95%;
+      z-index: 45;}
+
+.texto-bienvenida1 {position: absolute;
+      top: 49%;
+      left: 10%;
+      text-align: justify;
+      font-size: 1.45rem;
+      color: #ffffff;
+      z-index: 50;}
+
+.imagen-fondo {width: 100vw;
+      height: auto;
+      z-index: -5;}    
+
+#form {background-color: #ffffff;
+      width: 35rem;
+      height: 2rem;
+      border-radius: 0.313rem 0rem 0rem 0.313rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      z-index: 99;
+      margin: -14rem 0rem 0rem 6rem;}
+    
+#query {all:inherit;
+      font: 1.2rem system-ui;
+      color: #ffffff;
+      height: 100%;
+      width: 100%;
+      padding: 0.5rem 0.7rem;
+}
+    
+::placeholder{color: #b3b3b3;
+      opacity: 0.7;}
+
+#boton-tracking {all: inherit;
+      background-color: #7AB317 ;
+      cursor: pointer;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 0rem 0.313rem 0.313rem 0rem;}
+      
+svg {color: #ffffff;
+      fill: currentColor;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0.625rem;}
+
+.envio-sucursal {margin: 13rem 0rem 1rem 0rem;}
+
+.login-container2 {width: 100vw;
+      background-color: #0B2E59;
+      height: auto;}
+
+li {text-align: left;
+      color: #ffffff;
+      list-style:none}
+
+.li-logos {float: right;
+      list-style:none;}
+  
+a {display: block;}
+
+.column {
+      float: left;
+      width: 25%;}
+
+.column1 {
+      float: left;
+      width: 25%;
+      margin-top: 2.5rem;}
+
+/* Clear floats after the columns */
+.row:after {content: "";
+      display: table;
+      clear: both;} 
+
+.logos-contactanos {width: 5rem;
+      float: unset;
+      margin: 1rem 2.8rem 1rem 0rem;}
+
+.contactanos {width: 100vw;
+      background-color: #0B2E59;}
+
+.container button {
+      background-color: #0B2E59;
+      color: #ffffff;
+      border-radius: 1.5rem;
+      padding: 0.875rem 1.25rem;
+      margin: 0.5rem 0;
+      border: none;
+      cursor: pointer;
+      width: 41rem;
+      font-size: 1.3rem;}
+
+#banner p {text-align: center;
+      font-size: 1.5rem;
+      margin: 0rem 1rem 1.5rem 1rem;}
+
+/* Add a hover effect for buttons */
+button:hover {opacity: 0.8;}
+
+/* The "Forgot password" text */
+span.psw {float: right;}
+
+.container {
+      position: relative;
+      text-align:left;
+      color: #0B2E59;}
+
+.container p{position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      font-size: 1.5rem;}
+
+.logo-pie {width: 16rem;
+      width: 16rem;
+      margin: 1rem 0rem 1rem 2.5rem;;}
+
+.login-container3 {width: 100vw;
+      height: 13rem;
+      display:flex;
+      justify-content:center;}
+
+.logo2 {width: 12rem;
+      height: auto;
+      border-radius: 2rem;
+      box-shadow: 0rem 0.063rem 0.563rem 0 #b2b3b4b9;
+      margin-left:2rem;
+      padding: 1.5rem;}
+
+.logo2:hover {opacity: 0.8;
+      background-color: #cae994;}
+
+/*login.html*/
+
+.login-form {display: flex;
+      align-items: center;
+      width: 70vh;
+      margin-right: 2rem;}
+
+.user-menu {
+      color: #7AB317!important;
+      font-size: 1.2rem;
+      margin: 2.5rem 4rem 0 0;}
+        
+.user-menu-div {
+      line-height: normal;
+      margin-bottom: 0.75rem}
+        
+/*.user-icon {
+      font-size: 1.75rem;
+      color: #7bb517
+      padding: 0.125rem 0;
+      margin-top: 1.25rem}*/
+
+#banner {width: 100vw;
+      display: flex;
+      justify-content:space-between;}
+
+/*boton de login*/
+.boton {color: #ffffff;
+      background-color: #0B2E59;
+      padding: 0.5rem 1.2rem;
+      border: 0.8rem, #ffffff, solid;
+      border-radius: 3.5rem;
+      text-decoration: none;
+      display: inline;
+      align-items:baseline;
+      font-size: 1rem;
+      margin: 2rem 4rem 1rem 0.8rem;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      height: 3rem}
+
+.letter {width: 100%;
+      height: auto}
+
+.psw a {text-decoration: none;
+      color: #0B2E59;
+      font-size: 1rem;
+      margin-bottom: 2rem;}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+      width: 100%;
+      padding: 0.75rem 1.25rem;
+      margin: 0.5rem 0;
+      display: inline-block;
+      border: 0.063rem solid #ccc;
+      box-sizing: border-box;}
+
+/*envios.html*/
+
+#customers {
+      border-collapse:separate;
+      width: 80%;
+      margin: 0 auto 1rem auto;}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+      padding-top: 1rem;
+      padding-bottom: 0.75rem;
+      text-align: left;
+      background-color: #7AB317;
+      color: #ffffff;}
+
+#customers td, #customers th {
+      border: 0.063rem solid #ffffff;
+      padding: 1rem;}
+
+.container-tabla {margin-left: auto;
+      margin-right: auto;}
+
+.container-envio {width: 78%;
+      display:flex;
+      justify-content:space-between;
+      margin: 0 auto 0 auto;}
+
+.container-envio p {font-size: 1rem;
+      text-align: left;
+      margin: 0.5rem 0;}
+
+h5 {font-size: 1rem;
+      margin: 0.5rem 0;}
+
+.print-city {margin-top: 4rem;}
+
+.print-logo {float:right;
+      cursor: pointer;}
+
+.column li {margin-bottom: 0.5rem;}
+.column1 li {margin-bottom: 0.5rem;}
+
+.nro-camion {width: 80%;
+      margin-left:auto;
+      margin-right:auto;}
+
+.camion {width: 100%;}
+
+/*sucursal.html*/
+.container-sucursal {display:flex;  
+      justify-content:center;
+      margin: 0.8rem 1rem 0.5rem 2rem;
+      padding: 0.5rem 1rem 0.5rem 2rem;}
+
+.container-sucursal li {font-size: 1.2rem;
+      color: #000000;
+      list-style:none}
+
+.container-sucursal1 {width: 100vw;
+      display:flex;
+      justify-content:space-between;}
+
+h3{margin: 0rem 0.5rem 0rem 2.5rem;}
+
+.localidad {margin-left: 2rem;}
+
+#lang {width: 33rem;
+      margin-bottom: 0.625rem;
+      margin-top: 0.625rem;
+      outline: 0;
+      background: #ffffff;
+      color: #999898;
+      border: 0.125rem solid #0B2E59;
+      padding: 0.5rem;
+      border-radius: 0.563rem;} 
+
+.logo3 {width: 12rem;
+      height: 10rem;
+      border-radius: 2rem;
+      box-shadow: 0rem 0.063rem 0.563rem 0 #b2b3b4b9;
+      padding: 1.5rem;
+      margin-left: 1.5rem;}
+
+.logo3:hover {opacity: 0.5;
+      background-color: #cae994;}
+
+.container1 {position: relative;
+      text-align:center;
+      color: #0B2E59;}
+
+.container1 button {
+      background-color: #7AB317;
+      color: #ffffff;
+      border-radius: 1.5rem;
+      padding: 0.875rem 1.25rem;
+      margin: 0.5rem 0;
+      border: none;
+      cursor: pointer;
+      width: 41rem;
+      font-size: 1.3rem;}
+
+#googleMap {width: 100vw;
+height: 600px;
+position: static;
+box-sizing: border-box}
+
+/*dashboard.html*/
+.bt-menu:hover {
+      background-color: #fff!important;
+      color: #7AB317;
+      border-color: #7AB317}
+        
+.dashboard-container {width: 100vw;
+      display:flex;
+      justify-content:center;
+      margin: 1.5rem 0 1.5rem 0;}
+
+/*precios.html*/
+.container-precios {display:flex;  
+      justify-content:space-around;
+      margin: 0.8rem 1rem 0.5rem 2rem;
+      padding: 0.5rem 1rem 0.5rem 2rem;}
+
+#precios-postales {
+      border-collapse:separate;
+      width: 80%;
+      margin: 0 auto 1rem auto;}
+      
+#precios-postales tr:nth-child(even){background-color: #f2f2f2;}
+      
+#precios-postales tr:hover {background-color: #ddd;}
+      
+#precios-postales th {
+            padding-top: 1rem;
+            padding-bottom: 0.75rem;
+            text-align: left;
+            }
+#precios-postales td {
+      padding-top: 1rem;
+      padding-bottom: 0.75rem;
+      text-align: right;
+                  }
+
+#customers td, #customers th {
+      border: 0.063rem solid #ffffff;
+      padding: 1rem;}
+      
+.container-tabla {margin-left: auto;
+            margin-right: auto;}
+
+.vertical {border-left: 0.375rem solid #7AB317;
+            height: 30rem;}
+
+.container-precios a {font-size: 1.2rem;
+      color: #0B2E59;
+      list-style:none;
+     }
+
+.logos-precios {width: 4rem;
+      float:initial;
+      margin: 1rem 2.8rem 1rem 0rem;}

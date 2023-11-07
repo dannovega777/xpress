@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="XPress, tu correo privado seguro, rápido y facil de usar.">
+    <meta name="keywords" content="sistema tracking, envios, correo,
+    tracking">
+    <meta name="author" content="Daniel Vega">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets\img\favicon\favicon.ico" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/fd20449e17.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="assets\css\styles.css">    
+    <title>XPress | Tus envios llegan mas rápido</title>
+        
+</head>
+<body>
+    <header><!-- Logo e información del sitio -->
+        <nav >
+            <div class="login-container">
+                <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a>
+                <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html">
+                    <i class="far fa-user-circle"></i> Juan Pérez </a>
+            </div>
+        </nav>  
+    </header>
+        <!-- Barra de navegación -->
+<main>
+    <section class=""> 
+        <p>Búsqueda de <b>Sucursal</b></p>
+        <article class="login-container3">
+            <a title="sucursal" href="sucursal.html"><img class="logo3" src="assets/img/imagenes/retirar-envio.svg" alt="buscar sucursal" ></a> 
+            <a title="envios" href="envios.html"><img class="logo3" src="assets/img/imagenes/despachar-envio.svg" alt="ver mis envios" ></a> 
+            <a title="envios" href="envios.html"><img class="logo3" src="assets/img/imagenes/comprar-servicio.svg" alt="ver mis envios" ></a>
+        </article>
+    </section>
+    <section class="container-sucursal"> 
+        <article >
+        <form action="#">
+            <label for="lang"> <b> Provincia </b></label>
+                <select name="lenguajes" id="lang">
+                    <option value="selecciona">Seleccione una Provincia</option>
+                    <option value="caba">Ciudad Autonoma de Buenos Aires</option>
+                    <option value="buenos-aires">Buenos Aires</option>
+                    <option value="catamarca">Catamarca</option>
+                    <option value="chaco">Chaco</option>
+                    <option value="chubut">Chubut</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="corrientes">Corrientes</option>
+                    <option value="entre-rios">Entre Ríos</option>
+                    <option value="formosa">Formosa</option>
+                    <option value="jujuy">Jujuy</option>
+                    <option value="la-pampa">La Pampa</option>
+                    <option value="la-rioja">La Rioja</option>
+                    <option value="mendoza">Mendoza</option>
+                    <option value="misiones">Misiones</option>
+                    <option value="neuquen">Neuquen</option>
+                    <option value="rio-negro">Rio Negro</option>
+                    <option value="salta">Salta</option>
+                    <option value="san-juan">San Juan</option>
+                    <option value="san-luis">San Luis</option>
+                    <option value="santa-cruz">Santa Cruz</option>
+                    <option value="santa-fe">Santa Fe</option>
+                    <option value="sgo-estero">Santiago del Estero</option>
+                    <option value="tierra-fuego">Tierra del Fuego</option>
+                    <option value="tucuman">Tucuman</option>
+                 </select>
+        </form>
+            </article>  
+            <article class="localidad">
+            <form action="#">
+                <label for="lang"> <b>Localidad</b>  </label>
+                <select name="localidad" id="lang">
+                  <option value="selecciona">Seleccione una Localidad</option>
+                  <option value="caba">Ciudad Autonoma de Buenos Aires</option>
+                  <option value="buenos-aires">Buenos Aires</option>
+                  <option value="catamarca">Catamarca</option>
+                  <option value="chaco">Chaco</option>
+                  <option value="chubut">Chubut</option>
+                  <option value="cordoba">Córdoba</option>
+                  <option value="corrientes">Corrientes</option>
+                  <option value="entre-rios">Entre Ríos</option>
+                  <option value="formosa">Formosa</option>
+                  <option value="jujuy">Jujuy</option>
+                  <option value="la-pampa">La Pampa</option>
+                  <option value="la-rioja">La Rioja</option>
+                  <option value="mendoza">Mendoza</option>
+                  <option value="misiones">Misiones</option>
+                  <option value="neuquen">Neuquen</option>
+                  <option value="rio-negro">Rio Negro</option>
+                  <option value="salta">Salta</option>
+                  <option value="san-juan">San Juan</option>
+                  <option value="san-luis">San Luis</option>
+                  <option value="santa-cruz">Santa Cruz</option>
+                  <option value="santa-fe">Santa Fe</option>
+                  <option value="sgo-estero">Santiago del Estero</option>
+                  <option value="tierra-fuego">Tierra del Fuego</option>
+                  <option value="tucuman">Tucuman</option>
+                </select>
+             </form>
+            </article> 
+    </section>
+    <h3>Selecciona el tipo de servicio que buscas (opcional)</h3>
+    <section class="container-sucursal"> 
+        
+        <article class="">
+        <label > 
+                 <ul>
+                    <li><input type="checkbox" name="postales-nacionales"> postales nacionales </li>
+                    <li><input type="checkbox" name="encomiendas-nacionales"> encomiendas nacionales </li>
+                    <li><input type="checkbox" name="telegramas-nacionales"> telegramas nacionales </li>
+                </ul>
+        </label>
+    </article>
+    <article>
+        <label >
+            <ul>
+                <li><input type="checkbox" name="telegramas-internacionales"> telegramas internacionales </li>
+                <li><input type="checkbox" name="encomiendas-nternacionales"> encomiendas internacionales</li>
+                <li><input type="checkbox" name="postales-internacionales"> postales internacionales</li>
+            </ul>    
+        </label>
+    </article>    
+    <article>
+    <label >
+        <ul>
+            <li><input type="checkbox" name="e-tienda"> entrega pedidos de e-tienda </li>
+            <li><input type="checkbox" name="e-commerce"> entrega paquetería e-commerce </li>
+            <li><input type="checkbox" name="seguros-nacionales "> seguros nacionales </li>
+        </ul>
+    </label>
+    </article>   
+</section>        
+    <hr>
+    <div class="container1"> <button type="submit">Buscar</button></div>
+</section>
+    <div >
+    <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7807.374614654935!2d-58.38224265393328!
+    3d-34.63963158795534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbca1400ef0f%3A0x7ee96f418b0d3110!2
+    sAndreani%20Barracas!5e0!3m2!1ses!2sus!4v1699284747252!5m2!1ses!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</main>
+        <!-- Pie de página -->
+        <footer class="login-container2">
+            <section class="row">     
+            <article class="column">
+                <h4>¿Qué necesitás hacer?</h4>
+                <ul >
+                <li><a href="#">Hacer un envío</a></li>
+                <li><a href="sucursal.html">Buscar sucursal</a></li>
+                <li><a href="envios.html">Ver mis envíos</a></li>
+                </ul>
+            </article>
+            <article class="column1">
+                <ul>
+                <li><a href="#">Ver precios</a></li>
+                <li><a href="#">Ver envíos en Rezago</a></li>
+                </ul>
+            </article>
+            <article class="column">
+                <h4>Nosotros</h4>
+                <ul >
+                <li><a href="#">Segmentos</a></li>
+                <li><a href="#">Sustentabilidad</a></li>
+                <li><a href="#">Trabajá con nosotros</a></li>
+                </ul>
+            </article>
+            <article class="column">
+                <h4>Ayuda</h4>
+               <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">0800-122-1112</a></li>
+                <li><a href="#">atenciondigital@xpress.com</a></li>
+                </ul>
+            </article>
+            <hr class="hr-index">
+            <div>
+                <ul>
+                    <li class="li-logos"><a href="https://www.youtube.com" target="_blank"><img class="logos-contactanos" src="assets/img/imagenes/YouTube.png" alt="YouTube">
+                    </a></li> 
+                    <li class="li-logos"><a href="https://www.instagram.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/instagram.svg" alt="Instagram">
+                    </a></li>
+                    <li class="li-logos"><a href="https://twitter.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/X_logo.svg" alt="X">
+                    </a></li>
+                    <li class="li-logos"><a href="https://www.facebook.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/facebook.svg" alt="Facebook">
+                    </a></li>    
+                </ul>
+                <a title="Volver a Inicio" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
+            </div>
+            </section>
+        </footer>
+        </body>
+    </html>
