@@ -9,12 +9,12 @@
     tracking">
     <meta name="author" content="Daniel Vega">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="assets\img\favicon\favicon.ico" type="image/x-icon">
-        <script src="https://kit.fontawesome.com/fd20449e17.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets\css\styles.css">    
+    <link rel="icon" href="assets\img\favicon\favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fd20449e17.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets\css\styles.css">    
     <title>XPress | Tus envios llegan mas rápido</title>
         
 </head>
@@ -31,20 +31,20 @@
     <!-- Contenido principal -->
     <main>
         <!-- Artículo destacado -->
-        <div>
-            <img class="imagen-fondo" src="assets/img/imagenes/familia-fondo1.png" alt="imagen de fondo" >
-            <p class="texto-bienvenida">¡Te damos la <br><span style="color:#7AB317"><b>Bienvenida!</b></span></p>
-                <p class="texto-bienvenida1">¿Querés saber dónde está tu envío?</p>
-        </div>
-        <div> 
-            <form role="search" id="form">
-            <input type="search" id="query" name="q"
-            placeholder="Ingresá  el número de seguimiento">
-            <button id="boton-tracking">
-            <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
-            </button>
-            </form>               
-          </div>
+        <img class="imagen-fondo" src="assets/img/imagenes/familia-fondo1.png" alt="imagen de fondo" >  
+          
+        <section class="texto-bienvenida">
+        <article class="search">
+            
+           <input type="text" class="searchTerm" placeholder="Ingresá  el número de seguimiento">
+           <button type="submit" class="searchButton">
+           <i class="fa fa-search"></i>
+           <p class="texto-bienvenida">¡Te damos la <br><span style="color:#7AB317"><b>Bienvenida!</b></span></p>
+           <p class="texto-bienvenida1">¿Querés saber dónde está tu envío?</p>
+          </button>
+        </article>
+    </section>
+     </div>
         <section class="envio-sucursal"> 
             <p >¡Conocé las <b>soluciones personalizadas</b> que tenemos para vos!</p>
             <article class="login-container3">
@@ -60,31 +60,32 @@
         <article class="column">
             <h4>¿Qué necesitás hacer?</h4>
             <ul >
-            <li><a href="#">Hacer un envío</a></li>
-            <li><a href="sucursal.html">Buscar sucursal</a></li>
-            <li><a href="envios.html">Ver mis envíos</a></li>
+                <li><a href="sucursal.html">Buscar sucursal</a></li>
+                <li><a href="envios.html">Ver mis envíos</a></li>
+                <li><a href="precios.html">Ver precios</a></li>
             </ul>
         </article>
         <article class="column1">
             <ul>
-            <li><a href="precios.html">Ver precios</a></li>
-            <li><a href="#">Ver envíos en Rezago</a></li>
+                <li><a href="#">Hacer un envío</a></li>
+                <li><a href="#">Ver envíos en Rezago</a></li>
+            
             </ul>
         </article>
         <article class="column">
             <h4>Nosotros</h4>
             <ul >
-            <li><a href="#">Segmentos</a></li>
-            <li><a href="#">Sustentabilidad</a></li>
-            <li><a href="#">Trabajá con nosotros</a></li>
+                <li><a href="#">Segmentos</a></li>
+                <li><a href="#">Sustentabilidad</a></li>
+                <li><a href="#">Trabajá con nosotros</a></li>
             </ul>
         </article>
         <article class="column">
             <h4>Ayuda</h4>
            <ul>
-            <li><a href="#">Preguntas frecuentes</a></li>
-            <li><a href="#">0800-122-1112</a></li>
-            <li><a href="#">atenciondigital@xpress.com</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">0800-122-1112</a></li>
+                <li><a href="#">atenciondigital@xpress.com</a></li>
             </ul>
         </article>
         <hr class="hr-index">
