@@ -161,8 +161,8 @@ span.psw {float: right;}
 
 .login-form {display: flex;
       align-items: center;
-      width: 41rem;
-      margin-right: 3rem;}
+      width: 40rem;
+      margin:0 3rem;}
 
 .user-menu {
       color: #7AB317!important;
