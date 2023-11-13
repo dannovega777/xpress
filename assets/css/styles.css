@@ -54,24 +54,6 @@ border: #ffffff solid 0.15rem;}
       height: auto;
       z-index: -5;}    
 
-/*#form {background-color: #ffffff;
-      width: 35rem;
-      height: 2rem;
-      border-radius: 0.313rem 0rem 0rem 0.313rem;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      z-index: 99;
-      margin: -14rem 0rem 0rem 6rem;}
-    
-#query {all:inherit;
-      font: 1.2rem system-ui;
-      color: #ffffff;
-      height: 100%;
-      width: 100%;
-      padding: 0.5rem 0.7rem;
-}*/
-    
 ::placeholder{color: #b3b3b3;
       opacity: 0.8;
 font-size: 1rem;}
@@ -297,11 +279,12 @@ h5 {font-size: 1rem;
       display:flex;
       justify-content:space-between;}
 
-h3{margin: 0rem 0.5rem 0rem 2.5rem;}
+h3{margin: 0rem 0rem -1rem 25rem;
+color: #0B2E59;}
 
 .localidad {margin-left: 2rem;}
 
-#lang {width: 33rem;
+#location {width: 25rem;
       margin-bottom: 0.625rem;
       margin-top: 0.625rem;
       outline: 0;
@@ -309,7 +292,8 @@ h3{margin: 0rem 0.5rem 0rem 2.5rem;}
       color: #999898;
       border: 0.125rem solid #0B2E59;
       padding: 0.5rem;
-      border-radius: 0.563rem;} 
+      border-radius: 0.563rem;
+      font-size: 1rem;} 
 
 .logo3 {width: 12rem;
       height: 10rem;
@@ -363,10 +347,6 @@ box-sizing: border-box}
       width: 60%;
       margin: 0 auto 2rem 0rem;}
 
-      
-/*#precios-postales tr:nth-child(even){background-color: #f2f2f2;
-margin-left: 2rem;}*/
-      
 #precios-postales tr:hover {background-color: #ddd;}
       
 
@@ -459,4 +439,3 @@ h6 {font-size: 1rem;
 text-align: center;
 color: #0B2E59;
 margin-top: auto;}
-

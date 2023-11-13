@@ -3,7 +3,7 @@
 a {text-decoration: none;
       color: #ffffff;
       font-size: 1.3rem;
-      line-height: 1em;}
+      line-height: 1.3em;}
 
 hr {width: 97%;
       border: #0B2E59 solid 0.15rem;}
@@ -179,7 +179,7 @@ span.psw {float: right;}
       padding: 0.125rem 0;
       margin-top: 1.25rem}*/
 
-#banner {width: 100vw;
+#banner {width: 97vw;
       display: flex;
       justify-content:space-between;}
 

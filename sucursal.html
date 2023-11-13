@@ -30,7 +30,7 @@
     </header>
         <!-- Barra de navegación -->
 <main>
-    <section class=""> 
+    <section> 
         <p>Búsqueda de <b>Sucursal</b></p>
         <article class="login-container3">
             <a title="sucursal" href="sucursal.html"><img class="logo3" src="assets/img/imagenes/retirar-envio.svg" alt="buscar sucursal" ></a> 
@@ -41,8 +41,8 @@
     <section class="container-sucursal"> 
         <article >
         <form action="#">
-            <label for="lang"> <b> Provincia </b></label>
-                <select name="lenguajes" id="lang">
+            <label for="state"></label>
+                <select name="provincia" id="location">
                     <option value="selecciona">Seleccione una Provincia</option>
                     <option value="caba">Ciudad Autonoma de Buenos Aires</option>
                     <option value="buenos-aires">Buenos Aires</option>
@@ -73,8 +73,8 @@
             </article>  
             <article class="localidad">
             <form action="#">
-                <label for="lang"> <b>Localidad</b>  </label>
-                <select name="localidad" id="lang">
+                <label for="city"></label>
+                <select name="localidad" id="location">
                   <option value="selecciona">Seleccione una Localidad</option>
                   <option value="caba">Ciudad Autonoma de Buenos Aires</option>
                   <option value="buenos-aires">Buenos Aires</option>
@@ -135,8 +135,7 @@
     </label>
     </article>   
 </section>        
-    <hr>
-    <div class="container1"> <button type="submit">Buscar</button></div>
+        <div class="container1"> <button type="submit">Buscar</button></div>
 </section>
     <div >
     <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7807.374614654935!2d-58.38224265393328!
@@ -150,14 +149,14 @@
             <article class="column">
                 <h4>¿Qué necesitás hacer?</h4>
                 <ul >
-                <li><a href="#">Hacer un envío</a></li>
                 <li><a href="sucursal.html">Buscar sucursal</a></li>
                 <li><a href="envios.html">Ver mis envíos</a></li>
+                <li><a href="precios.html">Ver precios</a></li>
                 </ul>
             </article>
             <article class="column1">
                 <ul>
-                <li><a href="#">Ver precios</a></li>
+                <li><a href="#">Hacer un envío</a></li>
                 <li><a href="#">Ver envíos en Rezago</a></li>
                 </ul>
             </article>
