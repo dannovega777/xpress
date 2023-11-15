@@ -332,6 +332,7 @@ box-sizing: border-box}
       border-color: #7AB317}
         
 .dashboard-container {width: 100vw;
+      height: 38vh;
       display:flex;
       justify-content:center;
       margin: 1.5rem 0 1.5rem 0;}
@@ -421,16 +422,16 @@ color: #7AB317;}
 
 .precios h2{font-size: 1.8rem;
       text-align: center;
-color: #0B2E59;
-margin: 0.5rem 0rem;}
+      color: #0B2E59;
+      margin: 0.5rem 0rem;}
 
 .precios p{font-size: 1.2rem;
       text-align: center;
-color: #0B2E59;
-margin: 0.5rem 0rem;}
+      color: #0B2E59;
+      margin: 0.5rem 0rem;}
 
-.derecha {text-align: right;
-}
+.derecha {text-align: right;}
+
 .precios-logos {width: 20%;
       float:initial;
       margin: 1rem 2.8rem 1rem 0rem;}
@@ -439,3 +440,30 @@ h6 {font-size: 1rem;
 text-align: center;
 color: #0B2E59;
 margin-top: auto;}
+
+#actualizado {
+      width: 60%;
+      border: 0.188rem solid #fdfdfd;
+      border-right: none;
+      padding: 0.313rem;
+      height: 1.25rem;
+      border-radius: 0.313rem 0 0 0.313rem;
+      outline: none;
+      color: #fdfdfd;}
+                
+.email {
+      width: 2.2rem;
+      height: 2.2rem;
+      border: 0.063rem solid #7AB317;
+      background: #7AB317;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 0.4rem 0.4rem 0;
+      cursor: pointer;
+      font-size: 1.25rem;}  
+
+.search1 {
+      width: 80%;
+      display: flex;
+      position: relative;
+      margin: 1.5rem auto 1rem auto;}
