@@ -14,49 +14,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets\css\styles2.css">    
+    <link rel="stylesheet" type="text/css" href="assets\css\styles2.css">  <!-- Usa stykes2.css -->  
     <title>XPress | Tus envios llegan mas rápido</title>
         
 </head>
 <body>
     <header><!-- Logo e información del sitio -->
-      <nav >
-      <div class="login-container">
-            <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a>
-            <!--<a class="atras" href="index.html"><b><<</b>Atrás</a>-->
-            <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html">
+      <nav > <!-- Barra de navegación -->
+      <div class="login-container">  <!-- class de navbar -->
+            <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a> <!-- Logo y link al index -->
+            <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html"> <!-- Usario registrado / link a dashboard -->
             <i class="far fa-user-circle"></i> Juan Pérez </a>
         </div>
     </nav>  
         </header>
-        <!-- Barra de navegación -->
+    <!-- Contenido principal -->   
     <main>
-        <section id="banner">
-            <article> <img class="letter" src= assets/img/imagenes/carta.jpg>
+        <section id="banner"> <!-- sección imagen / form de login -->
+            <article> <img class="letter" src= assets/img/imagenes/carta.png> <!-- imagen carta --> 
             </article>
-            <article article class="login-form">
+            <!-- form de login --> 
+            <article class="login-form">
                 <form action="#" method="post">
                 <p>Ingresá y seguí tus envíos, las 24 horas, desde donde estés.</p>
                     <article class="container">
                         <label for="uname"><b>Usuario</b></label>
                         <input type="text" placeholder="E-mail *" name="uname" required>
+                        <i class="fa-solid fa-user"></i>
                         <label for="psw"><b>Contraseña</b></label>
                         <input type="password" placeholder="Contraseña*" name="psw" required>
+                        <i class="fa-solid fa-lock"></i>
                         <button type="submit">Iniciar sesión</button>
-                        <label >
+                        <label>
                         <input type="checkbox" checked="checked" name="Recordame"> Recordame
                         <span class="psw"> <a href="#">Olvidé mi Contraseña</a> </span>
                         </label>
+                        <a class="registro-link" href="registro.html"> ¿No estas registrado?</a>
                     </article>
-          </form>
-        </article>
+                </form>
+            </article>
         </section>
     </main>
 
         <!-- Pie de página -->
-        <footer class="login-container2">
+        <!-- Texto de soluciones personalizadas y botones de sucursales y ver mis envios --> 
+        <footer class="login-container2">  <!-- class de footer -->
             <section class="row">     
             <article class="column">
+                <!-- enlanes de footer -->
                 <h4>¿Qué necesitás hacer?</h4>
                 <ul >
                     <li><a href="sucursal.html">Buscar sucursal</a></li>
@@ -75,7 +80,7 @@
             </article>
             <article class="column">
                 <h4>Ayuda</h4>
-               <ul>
+                <ul>
                     <li><a href="#">Preguntas frecuentes</a></li>
                     <li><a href="#">0800-122-1112</a></li>
                     <li><a href="#">atenciondigital@xpress.com</a></li>
@@ -83,16 +88,16 @@
             </article>
             <article class="column" >
                 <h4>Mantenerse actualizado</h4>
-            <article class="search1"><input type="email" id="actualizado" placeholder="Ingresá tu E-mail">
-           <button type="submit" class="email">
-            <i class="fa-solid fa-paper-plane"></i>
-          </button>
-        </article>
+            <article class="search1"><input type="email" id="actualizado" placeholder="Ingresá tu E-mail"> <!-- insertar tu email -->
+                <button type="submit" class="email">
+                <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </article>
             </article>
             <hr>
-            <hr class="hr-index">
+            <hr class="hr-index"> <!-- hr de footer -->
             <div>
-                <ul>
+                <ul> <!-- links a redes sociales -->
                     <li class="li-logos"><a href="https://www.youtube.com" target="_blank"><img class="logos-contactanos" src="assets/img/imagenes/YouTube.png" alt="YouTube">
                     </a></li> 
                     <li class="li-logos"><a href="https://www.instagram.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/instagram.svg" alt="Instagram">
@@ -102,6 +107,7 @@
                     <li class="li-logos"><a href="https://www.facebook.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/facebook.svg" alt="Facebook">
                     </a></li>    
                 </ul>
+                <!-- logo con link a index -->
                 <a title="Volver a Inicio" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
             </div>
             </section>

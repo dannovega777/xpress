@@ -9,61 +9,67 @@
     tracking">
     <meta name="author" content="Daniel Vega">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets\img\favicon\favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets\img\favicon\favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/fd20449e17.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets\css\styles.css">    
+    <link rel="stylesheet" type="text/css" href="assets\css\styles2.css">  <!-- Usa styles2.css -->  
     <title>XPress | Tus envios llegan mas rápido</title>
         
 </head>
 <body>
-    <header ><!-- Logo e información del sitio -->
-        <nav> <!-- Barra de navegación -->
-            <div class="login-container"> <!-- class de navbar -->
-                  <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a> <!-- Logo y link al index -->
-                  <button class="boton" onclick="location.href='login.html'" type="button">INGRESAR</button> <!-- botón de Ingreso -->
-            </div>
-        </nav>  
-    </header>
-    <!-- Contenido principal -->
+    <header><!-- Logo e información del sitio -->
+      <nav > <!-- Barra de navegación -->
+      <div class="login-container">  <!-- class de navbar -->
+            <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a> <!-- Logo y link al index -->
+            <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html"> <!-- Usario registrado / link a dashboard -->
+            <i class="far fa-user-circle"></i> Juan Pérez </a>
+        </div>
+    </nav>  
+        </header>
+    <!-- Contenido principal -->   
     <main>
-        <!-- Imagen de fondo index -->
-        <img class="imagen-fondo" src="assets/img/imagenes/familia-fondo1.png" alt="imagen de fondo" >  
-        <!-- texto de bienvenida y barra de seguimiento -->  
-        <section class="texto-bienvenida">
-            <article class="search">
-                <p class="texto-bienvenida">¡Te damos la <br><span style="color:#7AB317"><b>Bienvenida!</b></span></p>
-                <p class="texto-bienvenida1">¿Querés saber dónde está tu envío?</p>
-                <input type="text" class="searchTerm" placeholder="Ingresá  el número de seguimiento"> <!-- barra de seguimiento -->
-                <a title="envios" href="envios.html"><button type="submit" class="searchButton"><!-- botón de barra de seguimiento -->
-                <i class="fa fa-search"></i>
-                </button></a>
-            </article> 
-        </section>
-        <!-- Texto de soluciones personalizadas y botones de sucursales y ver mis envios -->  
-        <section class="envio-sucursal"> 
-            <p >¡Conocé las <b>soluciones personalizadas</b> que tenemos para vos!</p>
-            <article class="login-container3">
-                <a title="sucursal" href="sucursal.html"><img class="logo2" src="assets/img/imagenes/buscar-sucursal.svg" alt="buscar sucursal" ></a> <!-- botón de busqueda de sucursales -->
-                <a title="envios" href="ver-envios.html"><img class="logo2" src="assets/img/imagenes/ver-envios.svg" alt="ver mis envíos" ></a> <!-- botón de ver mis envíos -->
+        <section id="banner"> <!-- sección imagen / form de login -->
+            <article> <img class="letter" src= assets/img/imagenes/paquete.png> <!-- imagen carta --> 
             </article>
+            <!-- form de login -->
+            <article class="login-form">
+            <form>
+                <p>Registrate y seguí tus envíos, las 24 horas, desde donde estés.</p>
+                <article class="container">
+                        <label for="text"><b>Usuario</b></label>    
+                        <input type="text" placeholder="Nombre *" name="uname" required>
+                        <i class="fa-solid fa-user"></i>
+                        <label for="psw"><b>Contraseña</b></label>
+                        <input type="password" placeholder="Contraseña*" name="psw" required>
+                        <i class="fa-solid fa-lock"></i>
+                        <label for="uname"><b>Correo</b></label>    
+                        <input type="text" placeholder="Correo *" name="email" required>
+                        <i class="fa-solid fa-envelope"> </i>
+                        <label for="text"><b>Teléfono</b></label>
+                        <input type="password" placeholder="Telefono *" name="tel" required>
+                        <i class="fa-solid fa-phone"> </i>
+                        <button type="submit">Registrar</button>
+                </article>
+            </form>
         </section>
-    </main>
+</main>
+
     <!-- Pie de página -->
-        <!-- Texto de soluciones personalizadas y botones de sucursales y ver mis envios --> 
-        <footer class="login-container2"> <!-- class de footer -->
+    <!-- Texto de soluciones personalizadas y botones de sucursales y ver mis envios --> 
+    <footer class="login-container2">  <!-- class de footer -->
         <section class="row">     
         <article class="column">
             <!-- enlanes de footer -->
             <h4>¿Qué necesitás hacer?</h4>
             <ul >
                 <li><a href="sucursal.html">Buscar sucursal</a></li>
-                <li><a href="envios.html">Ver mis envíos</a></li>
+                <li><a href="ver-envios.html">Ver mis envíos</a></li>
                 <li><a href="precios.html">Ver precios</a></li>
             </ul>
         </article>
+    
         <article class="column">
             <h4>Nosotros</h4>
             <ul>
@@ -74,7 +80,7 @@
         </article>
         <article class="column">
             <h4>Ayuda</h4>
-           <ul>
+            <ul>
                 <li><a href="#">Preguntas frecuentes</a></li>
                 <li><a href="#">0800-122-1112</a></li>
                 <li><a href="#">atenciondigital@xpress.com</a></li>
@@ -88,6 +94,7 @@
             </button>
         </article>
         </article>
+        <hr>
         <hr class="hr-index"> <!-- hr de footer -->
         <div>
             <ul> <!-- links a redes sociales -->
@@ -98,10 +105,10 @@
                 <li class="li-logos"><a href="https://twitter.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/X_logo.svg" alt="X">
                 </a></li>
                 <li class="li-logos"><a href="https://www.facebook.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/facebook.svg" alt="Facebook">
-                </a></li>  
-            </ul> 
+                </a></li>    
+            </ul>
             <!-- logo con link a index -->
-            <div title="Volver a Inicio" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
+            <a title="Volver a Inicio" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
         </div>
         </section>
     </footer>

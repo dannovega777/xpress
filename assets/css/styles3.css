@@ -1,23 +1,32 @@
-*{font-family:Montserrat;}
+*{font-family:Montserrat;} /*fuente general*/
 
+/*propiedades general de enlaces*/
 a {text-decoration: none;
       color: #ffffff;
       font-size: 1.3rem;
-      line-height: 1.5em;}
+      line-height: 1.3em;
+      display: block;}
 
+/*rayas horizantales generales*/
+hr {width: 97%;
+      border: #0B2E59 solid 0.15rem;}
+
+/*titulos h4 generales*/
 h4 {color: #7AB317;
       margin: 0.8rem 2.4rem;
       font-size: 1.5rem;
       margin-bottom: -0.5rem;}
 
-p {font-size: 1.8rem;
+/*texto de parrafo generales*/
+      p {font-size: 1.8rem;
       color: #0B2E59;
       text-align: center;}
 
-/*index.html*/
+/* INDEX.html */
 .hr-index {width: 97%;
 border: #ffffff solid 0.15rem;}
 
+/*class de navbar*/   
 .login-container {width: 100vw;
       height: 7rem; 
       background-color: #0B2E59;
@@ -29,139 +38,49 @@ border: #ffffff solid 0.15rem;}
 .logo {width: 16rem;
       margin: 1rem 2rem 0.5rem 2rem;}
 
-/*.texto-bienvenida {
-      position: absolute;
-      bottom: 46%;
-      left: 10%;
-      text-align: justify;
-      font-size: 4.18rem;
-      color: #ffffff;
-      line-height: 95%;
-      z-index: 45;}*/
-
-/*.texto-bienvenida1 {position: absolute;
-      bottom: 65%;
-      left: 10%;
-      text-align: justify;
-      font-size: 1.45rem;
-      color: #ffffff;
-      z-index: 50;}*/
-
-/*.imagen-fondo {width: 100vw;
-      height: auto;
-      z-index: -5;}    */
-
-::placeholder{color: #b3b3b3;
-      opacity: 0.8;
-      font-size: 1rem;}
-
-/*#boton-tracking {all: inherit;
-      background-color: #7AB317 ;
-      cursor: pointer;
-      width: 2.75rem;
-      height: 2.75rem;
-      border-radius: 0rem 0.313rem 0.313rem 0rem;}
-      
-svg {color: #ffffff;
-      fill: currentColor;
-      width: 1.5rem;
-      height: 1.5rem;
-      padding: 0.625rem;}*/
-
+/*class de footer*/  
 .login-container2 {width: 100vw;
       background-color: #0B2E59;
       height: auto;}
 
+/*propiedades lista general*/
 li {text-align: left;
       color: #ffffff;
       list-style:none}
 
+/*propiedades de los logos de redes sociales del footer*/
 .li-logos {float: right;
       list-style:none;}
-  
-a {display: block;}
 
+/*propiedades de los enlaces de los enlaces del footer*/
 .column {
       float: left;
       width: 25%;}
-
-/*.column1 {
-      float: left;
-      width: 25%;
-      margin-top: 2.5rem;}*/
 
 /* Clear floats after the columns */
 .row:after {content: "";
       display: table;
       clear: both;} 
 
+/*propiedades de los .svg de logos de redes sociales del footer*/
 .logos-contactanos {width: 5rem;
       float: unset;
       margin: 1rem 2.8rem 1rem 0rem;}
 
-.contactanos {width: 100vw;
-      background-color: #0B2E59;}
-
-.container button {
-      background-color: #0B2E59;
-      color: #ffffff;
-      border-radius: 1.5rem;
-      padding: 0.875rem 1.25rem;
-      margin: 0.5rem 0;
-      border: none;
-      cursor: pointer;
-      width: 41rem;
-      font-size: 1.3rem;}
-
-/*#banner p {text-align: center;
-      font-size: 1.5rem;
-      margin: 0rem 1rem 1.5rem 1rem;}*/
-
-/* Add a hover effect for buttons 
-button:hover {opacity: 0.8;}*/
-
-/* The "Forgot password" text 
-span.psw {float: right;}*/
-
-/*.container {
-      position: relative;
-      text-align:left;
-      color: #0B2E59;}*/
-
-/*.container p{position: absolute;
-      top: 50%;
-      left: 25%;
-      transform: translate(-50%, -50%);
-      font-size: 1.5rem;}*/
-
-/*.logo-pie {width: 16rem;
-      width: 16rem;
-      margin: 1rem 0rem 1rem 2.5rem;;}*/
-
-/*.login-container3 {width: 100vw;
-      height: 13rem;
-      display:flex;
-      justify-content:center;}*/
-
-/*.logo2 {width: 12rem;
-      height: auto;
-      border-radius: 2rem;
-      box-shadow: 0rem 0.063rem 0.563rem 0 #b2b3b4b9;
-      margin-left:2rem;
-      padding: 1.5rem;}*/
-
-/*.logo2:hover {opacity: 0.8;
-      background-color: #cae994;}*/
-      
+/* VER-ENVIOS.HTML */
+/*propiedades de tabla*/ 
 #historial-envios {
       border-collapse:separate;
       width: 75%;
       margin: 0 auto 1rem auto;}
 
+/*propiedades de color de filas tabla*/ 
 #historial-envioss tr:nth-child(even){background-color: #f2f2f2;}
 
+/*propiedades de hover filas tabla*/ 
 #historial-envios tr:hover {background-color: #cae994;}
 
+/*propiedades de fila de titulo de tabla*/ 
 #historial-envios th {
       padding-top: 0.5rem;
       padding-bottom: 0.75rem;
@@ -169,43 +88,35 @@ span.psw {float: right;}*/
       background-color: #7AB317;
       color: #ffffff;}
 
+/*class de texto de titulo y parrafo*/
 .precios h2{font-size: 1.8rem;
       text-align: center;
       color: #0B2E59;
       margin: 0.5rem 0rem;}
-
 .precios p{font-size: 1.2rem;
       text-align: center;
       color: #0B2E59;
       margin: 0.5rem 0rem;}
 
+/*propiedades de filas de la tabla de envíos asociados*/
 #historial-envios td, #historial-envios th {
       border: 0.063rem solid #ffffff;
       padding: 0.6rem 0.5rem;}
 
-.historial-envios h2 {    font-size: 1.8rem;
+/*class de texto de titulo y parrafo*/
+.historial-envios h2 {font-size: 1.8rem;
       text-align: center;
       color: #0B2E59;
       margin: 0.5rem 0rem;}
 
-.container-tabla {margin-left: auto;
-      margin-right: auto;}
-
-.container-envio {width: 78%;
-      display:flex;
-      justify-content:space-between;
-      margin: 0 auto 0 auto;}
-
-.container-envio p {font-size: 1rem;
-      text-align: left;
-      margin: 0.5rem 0;}
-
+/*class del articulo de barra de seguimiento*/
 .search {
       width: 80%;
       display: flex;
       position: relative;
       margin: 1.5rem auto 1rem auto;}
-            
+
+/*class de barra de seguimiento*/
 .searchTerm {
       width: 95%;
       border: 0.18rem solid #0B2E59;
@@ -214,10 +125,10 @@ span.psw {float: right;}*/
       height: 1.25rem;
       border-radius: 0.313rem 0 0 0.313rem;
       outline: none;
-      color: #fdfdfd;}
-            
+      color: #fdfdfd;}        
 .searchTerm:focus{color: #7AB317;}
-            
+
+/*class de botón de barra de seguimiento*/
 .searchButton {
       width: 2.813rem;
       height: 2.25rem;
@@ -229,10 +140,12 @@ span.psw {float: right;}*/
       cursor: pointer;
       font-size: 1.25rem;}
 
+/*class rectangulos de envíos*/
 .cuadros {width: 100%;
       padding-bottom: 1rem;
       border-bottom: 0.2rem #cae994 solid}
-                
+
+/*propiedades de columna de "Mantenerse actualizado" de footer*/
 #actualizado {
       width: 60%;
       border: 0.188rem solid #fdfdfd;
@@ -241,7 +154,7 @@ span.psw {float: right;}*/
       height: 1.25rem;
       border-radius: 0.313rem 0 0 0.313rem;
       outline: none;
-      color: #fdfdfd;}
+      color: #0B2E59;}
                 
 .email {
       width: 2.2rem;
@@ -254,6 +167,7 @@ span.psw {float: right;}*/
       cursor: pointer;
       font-size: 1.25rem;}  
 
+/*class del menú de login*/ 
 .user-menu {
       color: #7AB317!important;
       font-size: 1.2rem;
@@ -263,6 +177,7 @@ span.psw {float: right;}*/
       line-height: normal;
       margin-bottom: 0.75rem}
 
+/*class del texto de "Entregado"*/ 
 .entregado {text-align: right;
       color: #7AB317;
       font-weight: 500;}
