@@ -22,7 +22,42 @@ h4 {color: #7AB317;
       color: #0B2E59;
       text-align: center;}
 
+.subtitulo {padding-left: 3rem;}
+
 /* INDEX.html */
+/* NAVBAR */
+/*class de navbar*/      
+.login-container {width: 98.5vw;
+      height: 7rem; 
+      background-color: #0B2E59;
+      display: flex;
+      justify-content:space-between; 
+      box-shadow: 0 1px 4px #ffffff;}
+
+/*imagen de logo de navbar*/
+.logo {width: 16rem;
+      margin: 1rem 2rem 0.5rem 2rem;}
+
+/*propiedades botón de "Ingresar" en index*/
+.boton {color: #ffffff;
+      background-color: #0B2E59;
+      padding: 0.5rem 1.2rem;
+      border-radius: 3.5rem;
+      text-decoration: none;
+     
+      
+      font-size: 1rem;
+      margin: 2rem 4rem 1rem 0.8rem;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      height: 3rem}
+
+/* BODY */
+/*class de imagen de fondo*/
+.imagen-fondo {width: 98.5vw;
+      height: auto;
+      z-index: -5;}  
+
 /*class del articulo de barra de seguimiento*/
 .search {width: 32rem;
       display: flex;
@@ -55,47 +90,6 @@ font-size: 1rem;}
       cursor: pointer;
       font-size: 1.25rem;}
 
-/*reglas horizantales para footer*/
-.hr-index {width: 97%;
-      border: #ffffff solid 0.15rem;}
-
-/*class de navbar*/      
-.login-container {width: 100vw;
-      height: 7rem; 
-      background-color: #0B2E59;
-      display: flex;
-      justify-content:space-between; 
-      box-shadow: 0 1px 4px #ffffff;}
-
-/*imagen de logo de navbar*/
-.logo {width: 16rem;
-      margin: 1rem 2rem 0.5rem 2rem;}
-
-/*class de "¡Te damos la Bienvenida!"*/
-.texto-bienvenida {
-      position: absolute;
-      bottom: 46%;
-      left: 10%;
-      text-align: justify;
-      font-size: 4.18rem;
-      color: #ffffff;
-      line-height: 95%;
-      z-index: 45;}
-
-/*class de "¿Querés saber dónde está tu envío?"*/
-.texto-bienvenida1 {position: absolute;
-      bottom: 30%;
-      left: 10%;
-      text-align: justify;
-      font-size: 1.45rem;
-      color: #ffffff;
-      z-index: 50;}
-
-/*class de imagen de fondo*/
-.imagen-fondo {width: 100vw;
-      height: auto;
-      z-index: -5;}    
-
 /*propiedades texto en barra de busqueda*/
 ::placeholder{color: #b3b3b3;
       opacity: 0.8;
@@ -109,6 +103,45 @@ font-size: 1rem;}
       height: 2.75rem;
       border-radius: 0rem 0.313rem 0.313rem 0rem;}
 
+/*class de "¡Te damos la Bienvenida!"*/
+.texto-bienvenida {
+      position: absolute;
+      bottom: 46%;
+      left: 10%;
+      text-align: justify;
+      font-size: 4.18rem;
+      color: #ffffff;
+      line-height: 95%;
+      z-index: 45;}
+
+/*class de "¿Querés saber dónde está tu envío?"*/
+.texto-titulo1 {position: absolute;
+      bottom: 5rem;
+      left: 10%;
+      text-align: justify;
+      font-size: 4.18rem;
+      color: #ffffff;
+      line-height: 95%;
+      z-index: 45;}
+
+.texto-titulo2 {position: absolute;
+      font-weight: 700;
+      bottom: 0.8rem;
+      left: 10%;
+      text-align: justify;
+      font-size: 4.18rem;
+      color: #7AB317;
+      line-height: 95%;
+      z-index: 45;}
+
+.texto-pregunta {position: absolute;
+      bottom: 0.5rem;
+      left: 10%;
+      text-align: justify;
+      font-size: 1.45rem;
+      color: #ffffff;
+      z-index: 50;}
+
 /*propiedades de los archivos .svg de los botones de sucusales y ver envios*/
 svg {color: #ffffff;
       fill: currentColor;
@@ -116,10 +149,32 @@ svg {color: #ffffff;
       height: 1.5rem;
       padding: 0.625rem;}
 
+/*prowropiedades de svg de botones de sucursal y ver envíos*/   
+.logo2 {width: 12rem;
+      height: auto;
+      border-radius: 2rem;
+      box-shadow: 0rem 0.063rem 0.563rem 0 #b2b3b4b9;
+      margin-left:2rem;
+      padding: 1.5rem;}
+
+/*propiedades de hover de botones de sucursal y ver envíos*/ 
+.logo2:hover {opacity: 0.8;
+      background-color: #cae994;}
+
+/* FOOTER */      
+/*reglas horizantales para footer*/
+.hr-index {width: 97%;
+      border: #ffffff solid 0.15rem;}
+
+/*margen inferior de las columnas del footer*/
+.column li {margin-bottom: 0.5rem;}
+.column1 li {margin-bottom: 0.5rem;}
+
 /*class de footer*/  
-.login-container2 {width: 100vw;
+.login-container2 {width: 98.5;
       background-color: #0B2E59;
-      height: auto;}
+      height: auto;
+margin: 0 -0.5rem;}
 
 /*propiedades lista general*/
 li {text-align: left;
@@ -148,31 +203,42 @@ li {text-align: left;
 /* Los botones reciben el efecto que su opacidad desciende cuando son elegidos */
 button:hover {opacity: 0.8;}
 
-/* "Olvidé mi Contraseña" alieado a la derecha */
-span.psw {float: right;}
-
 /*propiedades del logo Xpress del footer*/
 .logo-pie {width: 16rem;
       width: 16rem;
       margin: 1rem 0rem 1rem 2.5rem;;}
 
+/*propiedades de columna de "Mantenerse actualizado" de footer*/
+#actualizado {width: 60%;
+      border: 0.188rem solid #fdfdfd;
+      border-right: none;
+      padding: 0.313rem;
+      height: 1.25rem;
+      border-radius: 0.313rem 0 0 0.313rem;
+      outline: none;
+      color: #0B2E59;}
+                
+.email {width: 2.2rem;
+      height: 2.2rem;
+      border: 0.063rem solid #7AB317;
+      background: #7AB317;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 0.4rem 0.4rem 0;
+      cursor: pointer;
+      font-size: 1.25rem;}  
+
+.search1 {width: 80%;
+      display: flex;
+      position: relative;
+      margin: 1.5rem auto 1rem auto;}
+
 /*class de botones de sucursal y ver envíos*/   
-.login-container3 {width: 100vw;
+.login-container3 {width: 98.5vw;
       height: 13rem;
       display:flex;
       justify-content:center;}
 
-/*propiedades de svg de botones de sucursal y ver envíos*/   
-.logo2 {width: 12rem;
-      height: auto;
-      border-radius: 2rem;
-      box-shadow: 0rem 0.063rem 0.563rem 0 #b2b3b4b9;
-      margin-left:2rem;
-      padding: 1.5rem;}
-
-/*propiedades de hover de botones de sucursal y ver envíos*/ 
-.logo2:hover {opacity: 0.8;
-      background-color: #cae994;}
 
 /* LOGIN.html */
 /*class del menú de login*/ 
@@ -184,83 +250,80 @@ span.psw {float: right;}
       line-height: normal;
       margin-bottom: 0.75rem}
 
-/*propiedades botón de "Ingresar" en index*/
-.boton {color: #ffffff;
-      background-color: #0B2E59;
-      padding: 0.5rem 1.2rem;
-      border: 0.8rem, #ffffff, solid;
-      border-radius: 3.5rem;
-      text-decoration: none;
-      display: inline;
-      align-items:baseline;
-      font-size: 1rem;
-      margin: 2rem 4rem 1rem 0.8rem;
-      transition-duration: 0.4s;
-      cursor: pointer;
-      height: 3rem}
+/* "Olvidé mi Contraseña" alieado a la derecha */
+span.psw {float: right;}
+
 
 /* ENVIOS.HTML */
-/*propiedades de tabla*/ 
-#customers {
-      border-collapse:separate;
-      width: 80%;
-      margin: 0 auto 1rem auto;}
-
-/*propiedades de color de filas tabla*/ 
-#customers tr:nth-child(even){background-color: #f2f2f2;}
-
-/*propiedades de hover filas tabla*/ 
-#customers tr:hover {background-color: #ddd;}
-
-/*propiedades de fila de titulo de tabla*/ 
-#customers th {
-      padding-top: 1rem;
-      padding-bottom: 0.75rem;
-      text-align: left;
-      background-color: #7AB317;
-      color: #ffffff;}
-
-/*propiedades de filas de tabla*/ 
-#customers td, #customers th {
-      border: 0.063rem solid #ffffff;
-      padding: 1rem;}
-
 /*class container de camión*/ 
 .container-camion {margin-left: auto;
       margin-right: auto;
       margin-top: 2rem;}
 
-/*class container de info de envío*/
-.container-envio {width: 78%;
-      display:flex;
-      justify-content:space-between;
-      margin: 0 auto 0 auto;}
+/*tamaño de imagen del camión de envío*/
+.camion {width: 100%;}
 
-/*class container de texto de info de envío*/
-.container-envio p {font-size: 1rem;
-      text-align: left;
-      margin: 0.5rem 0;}
-
-/*propiedas del subtitulo h5*/
-h5 {font-size: 1rem;
-      margin: 0.5rem 0;}
-
-/*propiedas del icono de imprimir*/
-.print-city {margin-top: 4rem;}
-.print-logo {float:right;
-      cursor: pointer;}
-
-/*margen inferior de las columnas del footer*/
-.column li {margin-bottom: 0.5rem;}
-.column1 li {margin-bottom: 0.5rem;}
-
-/*propiedades del texto nro de envío*/
+/*propiedades de div de imagen camión*/
 .nro-envio {width: 80%;
       margin-left:auto;
       margin-right:auto;}
+      
+/*class container de GRID*/
+.grid-container {
+      display: grid;
+      grid-template-columns: 20% 60% 20%;
+      grid-template-rows: 3rem 5rem 5rem 5rem 5rem 2rem;
+      background-color: #ffffff;
+      justify-content: space-evenly;
+      gap: 0.08rem;
+      margin: 0 12rem 0 12rem;}
 
-/*tamaño de imagen del camión de envío*/
-.camion {width: 100%;}
+/*class de titulo de GRID*/
+.grid-titulo {font-size: 1.1rem;
+      color: #ffffff;
+      font-weight: 700;
+      padding-left: 1rem;
+      background-color: #7AB317;
+      height: 2.8rem;}
+
+.grid-container > .grid-titulo {display: flex;
+      align-items: center;
+      margin-left: 0.5rem;
+      line-height: 0.7rem;}
+
+/*class y propiedades de texto de GRID*/
+.grid-texto {border-bottom: 0.2rem solid #cae994;}
+
+.grid-container > .grid-texto {display: flex;
+      align-items: center;
+      padding: 0 1rem 0 1rem;}
+
+/*class de grid de "infomación de envío"*/
+.grid-info {display: grid;
+      grid-template-columns: 25% 50% 15%;
+      grid-template-rows: 3rem 4rem 4rem;
+      background-color: #ffffff;
+      justify-content: space-evenly;
+      gap: 0.08rem;
+      margin: 0 12rem 0 12rem;}
+
+/*class de texto de grid de "infomación de envío"*/
+.grid-info > .grid-info-envio {display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: 700;}
+
+.grid-info-envio {grid-column: 1/2;}
+
+.grid-texto1 {text-align: right;}
+
+/*propiedas del icono de imprimir*/
+.print-logo {width: 2rem;
+      float:right;
+      cursor: pointer;}
+.print-logo:hover {opacity: 0.5;
+      width: 2.5rem      }
+
 
 /* SUCURSAL.html */
 /*class de imagenes de botones de retirar, despachar y comprar*/
@@ -323,7 +386,7 @@ color: #0B2E59;}
       font-size: 1.3rem;}
 
 /*propiedades de Google Map*/
-#googleMap {width: 100vw;
+#googleMap {width: 98.5vw;
 height: 600px;
 position: static;
 box-sizing: border-box}
@@ -350,16 +413,6 @@ box-sizing: border-box}
       margin: 0 auto 2rem 0rem;}
 #precios-postales tr:hover {background-color: #ddd;}
       
-/*propiedades de filas de la tabla de precios*/
-#precios-postales td {width: 30rem;
-      height: 2rem;
-      padding-top: 1rem;
-      padding-bottom: 0.75rem;}
-#precios-postales td, #precios-postales th {
-      border: 0.063rem solid #ffffff;
-      padding: 1rem;
-      border-bottom: 0.2rem #ddd solid;}
-
 /*propiedades de regla vertical*/
 .vertical {border-left: 0.375rem solid #7AB317;
             height: 30rem;}
@@ -390,9 +443,6 @@ box-sizing: border-box}
       color: #0B2E59;
       margin: 0.5rem 0rem;}
 
-/*class de texto de precios en tabla*/
-.derecha {text-align: right;}
-
 /*class de articulo de iconos de la izquierda*/
 .precios-logos {width: 20%;
       float:initial;
@@ -404,27 +454,18 @@ text-align: center;
 color: #0B2E59;
 margin-top: auto;}
 
-/*propiedades de columna de "Mantenerse actualizado" de footer*/
-#actualizado {width: 60%;
-      border: 0.188rem solid #fdfdfd;
-      border-right: none;
-      padding: 0.313rem;
-      height: 1.25rem;
-      border-radius: 0.313rem 0 0 0.313rem;
-      outline: none;
-      color: #0B2E59;}
-                
-.email {width: 2.2rem;
-      height: 2.2rem;
-      border: 0.063rem solid #7AB317;
-      background: #7AB317;
-      text-align: center;
-      color: #fff;
-      border-radius: 0 0.4rem 0.4rem 0;
-      cursor: pointer;
-      font-size: 1.25rem;}  
+/*class del grip de los precios*/
+.grid-precios {width: 30vw;
+      display: grid;
+      grid-template-columns: 90% 10%;
+      grid-template-rows: repeat(7, 4rem);
+      background-color: #ffffff;
+      justify-content:space-between;}
+           
+/*class de los textos del grip de los precios*/
+.precio-texto {border-bottom: 0.2rem solid #ccc;
+padding-top: 1.2rem;}
 
-.search1 {width: 80%;
-      display: flex;
-      position: relative;
-      margin: 1.5rem auto 1rem auto;}
+main {width: 98vw;}
+
+body {width: 98vw;}

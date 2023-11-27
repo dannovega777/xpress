@@ -14,34 +14,33 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets\css\styles.css">    
+        <link rel="stylesheet" type="text/css" href="assets\css\styles.css">   <!-- Usa styles.css -->    
     <title>XPress | Tus envios llegan mas rápido</title>
         
 </head>
 <body>
     <header><!-- Logo e información del sitio -->
-        <nav >
-            <div class="login-container">
+        <nav ><!-- Barra de navegación -->
+            <div class="login-container"> <!-- class de la navbar -->
                 <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a>
                 <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html">
-                    <i class="far fa-user-circle"></i> Juan Pérez </a>
+                    <i class="far fa-user-circle"></i> Juan Pérez </a> <!-- Usario registrado / link a dashboard -->
             </div>
         </nav>  
     </header>
-        <!-- Barra de navegación -->
-<main>
+        
+<main> <!-- Contenido principal --> 
     <section> 
-        <p>Búsqueda de <b>Sucursal</b></p>
+        <p class=subtitulo>Búsqueda de <b>Sucursal</b></p> <!-- Titulo de "Busqueda de Sucursal" -->
         <article class="login-container3">
-            <a title="sucursal" href="sucursal.html"><img class="logo3" src="assets/img/imagenes/retirar-envio.svg" alt="buscar sucursal" ></a> 
-            <a title="envios" href="envios.html"><img class="logo3" src="assets/img/imagenes/despachar-envio.svg" alt="ver mis envios" ></a> 
-            <a title="envios" href="envios.html"><img class="logo3" src="assets/img/imagenes/comprar-servicio.svg" alt="ver mis envios" ></a>
+            <a title="sucursal" href="sucursal.html"><img class="logo3" src="assets/img/imagenes/retirar-envio.svg" alt="buscar sucursal" ></a> <!-- Botón "Retirar envío" -->
+            <a title="envios" href="ver-envios.html"><img class="logo3" src="assets/img/imagenes/despachar-envio.svg" alt="ver mis envios" ></a> <!-- Botón "Despachar envío" -->
         </article>
-    </section>
-    <section class="container-sucursal"> 
+    </section> 
+    <section class="container-sucursal"> <!-- class de menús de selección -->
         <article >
         <form action="#">
-            <label for="state"></label>
+            <label for="state"></label> <!-- menú de selección de provincia -->
                 <select name="provincia" id="location">
                     <option value="selecciona">Seleccione una Provincia</option>
                     <option value="caba">Ciudad Autonoma de Buenos Aires</option>
@@ -71,7 +70,7 @@
                  </select>
         </form>
             </article>  
-            <article class="localidad">
+            <article class="localidad"> <!-- menú de selección de localidad -->
             <form action="#">
                 <label for="city"></label>
                 <select name="localidad" id="location">
@@ -103,57 +102,57 @@
                 </select>
              </form>
             </article> 
-    </section>
+    </section> <!-- menú de selección de tipo de servicio -->
     <h3>Selecciona el tipo de servicio que buscas (opcional)</h3>
     <section class="container-sucursal">  
         <article>
-        <label > 
-                 <ul>
-                    <li><input type="checkbox" name="postales-nacionales"> postales nacionales </li>
-                    <li><input type="checkbox" name="encomiendas-nacionales"> encomiendas nacionales </li>
-                    <li><input type="checkbox" name="telegramas-nacionales"> telegramas nacionales </li>
+            <label > 
+                    <ul>
+                        <li><input type="checkbox" name="postales-nacionales"> postales nacionales </li>
+                        <li><input type="checkbox" name="encomiendas-nacionales"> encomiendas nacionales </li>
+                        <li><input type="checkbox" name="telegramas-nacionales"> telegramas nacionales </li>
+                    </ul>
+            </label>
+        </article>
+        <article>
+            <label >
+                <ul>
+                    <li><input type="checkbox" name="telegramas-internacionales"> telegramas internacionales </li>
+                    <li><input type="checkbox" name="encomiendas-nternacionales"> encomiendas internacionales</li>
+                    <li><input type="checkbox" name="postales-internacionales"> postales internacionales</li>
+                </ul>    
+            </label>
+        </article>    
+        <article>
+            <label >
+                <ul>
+                    <li><input type="checkbox" name="e-tienda"> entrega pedidos de e-tienda </li>
+                    <li><input type="checkbox" name="e-commerce"> entrega paquetería e-commerce </li>
+                    <li><input type="checkbox" name="seguros-nacionales "> seguros nacionales </li>
                 </ul>
-        </label>
-    </article>
-    <article>
-        <label >
-            <ul>
-                <li><input type="checkbox" name="telegramas-internacionales"> telegramas internacionales </li>
-                <li><input type="checkbox" name="encomiendas-nternacionales"> encomiendas internacionales</li>
-                <li><input type="checkbox" name="postales-internacionales"> postales internacionales</li>
-            </ul>    
-        </label>
-    </article>    
-    <article>
-    <label >
-        <ul>
-            <li><input type="checkbox" name="e-tienda"> entrega pedidos de e-tienda </li>
-            <li><input type="checkbox" name="e-commerce"> entrega paquetería e-commerce </li>
-            <li><input type="checkbox" name="seguros-nacionales "> seguros nacionales </li>
-        </ul>
-    </label>
-    </article>   
+            </label>
+        </article>   
 </section>        
-        <div class="container1"> <button type="submit">Buscar</button></div>
+        <div class="container1"> <button type="submit">Buscar</button></div> <!-- Botón "Buscar" -->
 </section>
-    <div >
+    <div> <!-- Mapa de Google Maps -->
     <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7807.374614654935!2d-58.38224265393328!
     3d-34.63963158795534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbca1400ef0f%3A0x7ee96f418b0d3110!2
     sAndreani%20Barracas!5e0!3m2!1ses!2sus!4v1699284747252!5m2!1ses!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 </main>
         <!-- Pie de página -->
-        <footer class="login-container2">
+        <footer class="login-container2"> <!-- class del footer -->
             <section class="row">     
             <article class="column">
+                <!-- enlaces de footer -->
                 <h4>¿Qué necesitás hacer?</h4>
                 <ul >
                     <li><a href="sucursal.html">Buscar sucursal</a></li>
                     <li><a href="ver-envios.html">Ver mis envíos</a></li>
-                    <li><a href="precios.html">Ver precios</a></li>
+                    <li><a href="contacto.html">Contactanos</a></li>
                 </ul>
             </article>
-        
             <article class="column">
                 <h4>Nosotros</h4>
                 <ul>
@@ -164,23 +163,23 @@
             </article>
             <article class="column">
                 <h4>Ayuda</h4>
-               <ul>
+                <ul>
                     <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">0800-122-1112</a></li>
-                    <li><a href="#">atenciondigital@xpress.com</a></li>
+                    <li><a href="tel:+5408001221112">0800-122-1112</a></li>
+                    <li><a href="mailto:atenciondigital@xpress.com?Subject=Aquí%20el%20asunto%20del%20mail">atenciondigital@xpress.com</a></li>
                 </ul>
             </article>
             <article class="column" >
                 <h4>Mantenerse actualizado</h4>
-            <article class="search1"><input type="email" id="actualizado" placeholder="Ingresá tu E-mail">
+            <article class="search1"><input type="email" id="actualizado" placeholder="Ingresá tu E-mail"> <!-- insertar tu email -->
             <button type="submit" class="email">
             <i class="fa-solid fa-paper-plane"></i>
             </button>
             </article>
             </article>
-            <hr class="hr-index">
+            <hr class="hr-index"> <!-- regla horizontal de footer -->
             <div>
-                <ul>
+                <ul> <!-- links a redes sociales -->
                     <li class="li-logos"><a href="https://www.youtube.com" target="_blank"><img class="logos-contactanos" src="assets/img/imagenes/YouTube.png" alt="YouTube">
                     </a></li> 
                     <li class="li-logos"><a href="https://www.instagram.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/instagram.svg" alt="Instagram">
@@ -190,6 +189,7 @@
                     <li class="li-logos"><a href="https://www.facebook.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/facebook.svg" alt="Facebook">
                     </a></li>    
                 </ul>
+                <!-- logo con link a index -->
                 <a title="Volver a Inicio" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
             </div>
             </section>

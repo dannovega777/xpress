@@ -19,7 +19,7 @@
         
 </head>
 <body>
-    <header><!-- Logo e información del sitio -->
+    <header> <!--Logo e información del sitio -->
       <nav > <!-- Barra de navegación -->
       <div class="login-container">  <!-- class de navbar -->
             <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a> <!-- Logo y link al index -->
@@ -29,7 +29,7 @@
     </nav>  
         </header>
     <!-- Contenido principal -->   
-    <main>
+    <main >
         <section id="banner"> <!-- sección imagen / form de login -->
             <article> <img class="letter" src= assets/img/imagenes/carta.png> <!-- imagen carta --> 
             </article>
@@ -49,7 +49,31 @@
                         <input type="checkbox" checked="checked" name="Recordame"> Recordame
                         <span class="psw"> <a href="#">Olvidé mi Contraseña</a> </span>
                         </label>
-                        <a class="registro-link" href="registro.html"> ¿No estas registrado?</a>
+                        <button class="prueba" onclick="window.modal1.showModal();">Registrarte</button>
+
+                        <dialog id="modal1">
+                            <article class="login-form">
+                                <form>
+                                <article class="container">
+                                            <label for="text"><b>Usuario</b></label>    
+                                            <input type="text" placeholder="Nombre *" name="uname" required>
+                                            <i class="fa-solid fa-user"></i>
+                                            <label for="psw"><b>Contraseña</b></label>
+                                            <input type="password" placeholder="Contraseña*" name="psw" required>
+                                            <i class="fa-solid fa-lock"></i>
+                                            <label for="uname"><b>Correo</b></label>    
+                                            <input type="text" placeholder="Correo *" name="email" required>
+                                            <i class="fa-solid fa-envelope"> </i>
+                                            <label for="text"><b>Teléfono</b></label>
+                                            <input type="password" placeholder="Telefono *" name="tel" required>
+                                            <i class="fa-solid fa-phone"> </i>
+                                            <button type="submit">Registrar</button>
+                                    </article>
+                                </form>
+                            <label id="cerrar" onclick="window.modal1.close();">X</label>
+                         </dialog>
+                        </article>
+                        <!-- <a class="registro-link" href="registro.html"> ¿No estas registrado?</a> --> 
                     </article>
                 </form>
             </article>
@@ -66,15 +90,15 @@
                 <ul >
                     <li><a href="sucursal.html">Buscar sucursal</a></li>
                     <li><a href="ver-envios.html">Ver mis envíos</a></li>
-                    <li><a href="precios.html">Ver precios</a></li>
+                    <li><a href="contacto.html">Contactanos</a></li>
                 </ul>
             </article>
         
             <article class="column">
                 <h4>Nosotros</h4>
                 <ul>
-                    <li><a href="#">Segmentos</a></li>
-                    <li><a href="#">Sustentabilidad</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
                     <li><a href="#">Trabajá con nosotros</a></li>
                 </ul>
             </article>
@@ -82,8 +106,9 @@
                 <h4>Ayuda</h4>
                 <ul>
                     <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">0800-122-1112</a></li>
-                    <li><a href="#">atenciondigital@xpress.com</a></li>
+                    <li><a href="tel:+5408001221112">0800-122-1112</a></li>
+                    <li><a href="mailto:atenciondigital@xpress.com?Subject=Mi%20envío">atenciondigital@xpress.com</a></li>
+                    
                 </ul>
             </article>
             <article class="column" >

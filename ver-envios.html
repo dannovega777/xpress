@@ -14,124 +14,109 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets\css\styles3.css">    
+    <link rel="stylesheet" type="text/css" href="assets\css\styles3.css">  <!-- Usa styles3.css -->     
     <title>XPress | Tus envios llegan mas rápido</title>
 </head>
 
 <body>
     <header><!-- Logo e información del sitio -->
-      <nav >
-      <div class="login-container">
-            <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a>
-            <!--<a class="atras" href="index.html"><b><<</b>Atrás</a>-->
-            <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html">
+      <nav > <!-- Barra de navegación -->
+      <div class="login-container"><!-- class de navbar -->
+            <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a> <!-- Logo y link al index -->
+            <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html"> <!-- Usario registrado / link a dashboard -->
             <i class="far fa-user-circle"></i> Juan Pérez </a>
         </div>
     </nav>  
         </header>
-        <!-- Barra de navegación -->
-    <main class="precios">
-        <h2>¡Buscá más envíos!</h2>
-        <p>Podés buscar los envíos que no están asociados a tu cuenta.</p>
-        <section class="busca-envios">
-            <article class="search">
+        <!-- Contenido principal --> 
+        <main class="precios"> <!-- class del main -->
+        <h2>¡Buscá más envíos!</h2> <!-- Titulo -->
+        <p>Podés buscar los envíos que no están asociados a tu cuenta.</p> <!-- Subtitulo -->
+        <section class="busca-envios"> <!-- class del contenido -->
+            <article class="search"> <!-- barra de nro de seguimiento -->
                 <input type="text" class="searchTerm" placeholder="Ingresá un número de envío">
-                <button type="submit" class="searchButton">
+                <button type="submit" class="searchButton"> <!-- Botón "Buscar" -->
                 <i class="fa fa-search"></i>
                 </button>
             </article>
-        </section>
-        <table id="historial-envios">
-            <tr>
-                <th colspan="2">Historial de envíos asociados</th>
-            </tr>
-            <tr>
-            <td><b>MUNDO FIX</b><br> 360000853360880
-                </td>
-                <td class="entregado">ENTREGADO</td>
-            </tr>
-            <tr >
-                <td colspan="2"><img class="cuadros" src="assets/img/imagenes/cuadros.svg"></td>
-                
-            </tr>
-            <tr>
-                <td><b>DIGITAL SPORT SHOPPI</b> <br> 360000866537020
-                </td>
-                <td class="entregado">ENTREGADO</td>
-            </tr>
-            <tr>
-                <td colspan="2"><img class="cuadros" src="assets/img/imagenes/cuadros.svg"></td>
-            </tr>
-            <tr>
-                <td><b>GL SERVICIOS</b> <br> 360000866537310
-                </td>
-                <td class="entregado">ENTREGADO</td>
-            </tr>
-            <tr>
-                <td colspan="2"><img class="cuadros" src="assets/img/imagenes/cuadros.svg"></td>
-            </tr>
-            <tr>
-                <td><b>LEMON</b><br> 360000792345960
-                </td>
-                <td class="entregado" > ENTREGADO <i class="fa-duotone fa-bracket-round-right"></i> </td>
-                
-            </tr>
-            <tr>
-                <td colspan="2"><img class="cuadros" src="assets/img/imagenes/cuadros.svg"></td>
-            </tr>
-        </table>
-    </main>
+            <article class="grid-container"> <!-- Grid de "Historial de envíos asociados" -->
+                <div class="grid-item-titulo">Historial de envíos asociados</div>  <!-- Titulo del Grid -->
+                <div class="envio-nro"> <b>MUNDO FIX</b> <br> 360000853360880</div>
+                <div></div>
+                <div class="entregado">ENTREGADO</div>
+                <a class="greater-than" href="envios.html"><i class="fa-solid fa-greater-than"></i></a>
+                <div class="grid-cuadros"><img class="cuadros" src="assets/img/imagenes/cuadros.svg"></div>
 
+                <div class="envio-nro"><b>DIGITAL SPORT SHOPPI</b> <br> 360000866537020</div>
+                <div></div>
+                <div class="entregado">EN DISTRIBUCIÓN</div>
+                <a class="greater-than" href="envios.html"><i class="fa-solid fa-greater-than"></i></a>
+                <div class="grid-cuadros"><img class="cuadros" src="assets/img/imagenes/cuadros-1.svg"></div>
+
+                <div class="envio-nro"><b>GL SERVICIOS</b> <br> 360000866537310</div>
+                <div></div>
+                <div class="entregado">EN DISTRIBUCIÓN</div>
+                <a class="greater-than" href="envios.html"><i class="fa-solid fa-greater-than"></i></a>
+                <div class="grid-cuadros"><img class="cuadros" src="assets/img/imagenes/cuadros-2.svg"></div>
+            
+                <div class="envio-nro"><b>LEMON</b><br> 360000792345960</div>
+                <div></div>
+                <div class="entregado">ENTREGADO</div>
+                <a class="greater-than" href="envios.html"><i class="fa-solid fa-greater-than"></i></a>
+                <div class="grid-cuadros"><img class="cuadros" src="assets/img/imagenes/cuadros.svg"></div>
+        </article>
+    </main>
     <!-- Pie de página -->
-    <footer class="login-container2">
+    <footer class="login-container2"> <!-- class del footer -->
         <section class="row">     
-        <article class="column">
-            <h4>¿Qué necesitás hacer?</h4>
-            <ul >
-                <li><a href="sucursal.html">Buscar sucursal</a></li>
-                <li><a href="envios.html">Ver mis envíos</a></li>
-                <li><a href="precios.html">Ver precios</a></li>
-            </ul>
-        </article>
-    
-        <article class="column">
-            <h4>Nosotros</h4>
-            <ul>
-                <li><a href="#">Segmentos</a></li>
-                <li><a href="#">Sustentabilidad</a></li>
-                <li><a href="#">Trabajá con nosotros</a></li>
-            </ul>
-        </article>
-        <article class="column">
-            <h4>Ayuda</h4>
-           <ul>
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="#">0800-122-1112</a></li>
-                <li><a href="#">atenciondigital@xpress.com</a></li>
-            </ul>
-        </article>
-        <article class="column" >
-            <h4>Mantenerse actualizado</h4>
-        <article class="search"><input type="email" id="actualizado" placeholder="Ingresá tu E-mail">
-        <button type="submit" class="email">
-        <i class="fa-solid fa-paper-plane"></i>
-        </button>
-        </article>
-        </article>
-        <hr class="hr-index">
-        <div>
-            <ul>
-                <li class="li-logos"><a href="https://www.youtube.com" target="_blank"><img class="logos-contactanos" src="assets/img/imagenes/YouTube.png" alt="YouTube">
-                </a></li> 
-                <li class="li-logos"><a href="https://www.instagram.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/instagram.svg" alt="Instagram">
-                </a></li>
-                <li class="li-logos"><a href="https://twitter.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/X_logo.svg" alt="X">
-                </a></li>
-                <li class="li-logos"><a href="https://www.facebook.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/facebook.svg" alt="Facebook">
-                </a></li>    
-            </ul>
-            <a title="Volver a Inicio" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
-        </div>
+            <article class="column">
+                <!-- enlaces de footer -->
+                <h4>¿Qué necesitás hacer?</h4>
+                <ul >
+                    <li><a href="sucursal.html">Buscar sucursal</a></li>
+                    <li><a href="ver-envios.html">Ver mis envíos</a></li>
+                    <li><a href="contacto.html">Contactanos</a></li>
+                </ul>
+            </article>
+            <article class="column">
+                <h4>Nosotros</h4>
+                <ul>
+                    <li><a href="#">Segmentos</a></li>
+                    <li><a href="#">Sustentabilidad</a></li>
+                    <li><a href="#">Trabajá con nosotros</a></li>
+                </ul>
+            </article>
+            <article class="column">
+                <h4>Ayuda</h4>
+                <ul>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="tel:+5408001221112">0800-122-1112</a></li>
+                    <li><a href="mailto:atenciondigital@xpress.com?Subject=Aquí%20el%20asunto%20del%20mail">atenciondigital@xpress.com</a></li>
+                </ul>
+            </article>
+            <article class="column">
+                    <h4>Mantenerse actualizado</h4>
+                <article class="search"><input type="email" id="actualizado" placeholder="Ingresá tu E-mail"> <!-- insertar tu email -->
+                <button type="submit" class="email">
+                <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </article>
+            </article>
+            <hr class="hr-index"> <!-- regla horizontal de footer -->
+            <div>
+                <ul> <!-- links a redes sociales -->
+                    <li class="li-logos"><a href="https://www.youtube.com" target="_blank"><img class="logos-contactanos" src="assets/img/imagenes/YouTube.png" alt="YouTube">
+                    </a></li> 
+                    <li class="li-logos"><a href="https://www.instagram.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/instagram.svg" alt="Instagram">
+                    </a></li>
+                    <li class="li-logos"><a href="https://twitter.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/X_logo.svg" alt="X">
+                    </a></li>
+                    <li class="li-logos"><a href="https://www.facebook.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/facebook.svg" alt="Facebook">
+                    </a></li>    
+                </ul>
+                <!-- logo con link a index -->
+                <a title="Volver a Inicio" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
+            </div>
         </section>
 </footer>
 </body>

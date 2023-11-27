@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="XPress, tu correo privado seguro, rápido y facil de usar.">
+    <meta name="keywords" content="sistema tracking, envios, correo,
+    tracking">
+    <meta name="author" content="Daniel Vega">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets\img\favicon\favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/fd20449e17.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets\css\styles3.css">    
+    <title>XPress | Tus envios llegan mas rápido</title>
+</head>
+<body>
+    <header> <!-- Logo e información del sitio -->
+       <nav >
+      <div class="login-container">
+            <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a>
+            <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html">
+            <i class="far fa-user-circle"></i> Juan Pérez </a>
+        </div>
+    </nav>  
+        </header>
+<!-- Barra de navegación -->
+<main >
+    <section >
+        <article>
+            <form action="#" method="post">
+            <p>Ingresá y seguí tus envíos, las 24 horas, desde donde estés.</p>
+                <article>
+                        <input type="text" placeholder="Ingresá tu búsqueda">
+                    <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i> </button>
+                    <a title="Exportar" href="#"><img class="exportar-logo" src="assets/img/imagenes/exportar.svg" alt="imagen para el logo" ></a>
+                                    
+                    <ul >
+                         <li><form>
+                            <label for="state"><b>Tu Ubicación</b></label>
+                            <select name="provincia" id="location">
+                                      <option  value="selecciona" class="oo">Seleccione una Provincia</option>
+                                      <option value="caba">Ciudad Autonoma de Buenos Aires</option>
+                                      <option value="buenos-aires">Buenos Aires</option>
+                                      <option value="catamarca">Catamarca</option>
+                                      <option value="chaco">Chaco</option>
+                                      <option value="chubut">Chubut</option>
+                                      <option value="cordoba">Córdoba</option>
+                                      <option value="corrientes">Corrientes</option>
+                                      <option value="entre-rios">Entre Ríos</option>
+                                      <option value="formosa">Formosa</option>
+                                      <option value="jujuy">Jujuy</option>
+                                      <option value="la-pampa">La Pampa</option>
+                                      <option value="la-rioja">La Rioja</option>
+                                      <option value="mendoza">Mendoza</option>
+                                      <option value="misiones">Misiones</option>
+                                      <option value="neuquen">Neuquen</option>
+                                      <option value="rio-negro">Rio Negro</option>
+                                      <option value="salta">Salta</option>
+                                      <option value="san-juan">San Juan</option>
+                                      <option value="san-luis">San Luis</option>
+                                      <option value="santa-cruz">Santa Cruz</option>
+                                      <option value="santa-fe">Santa Fe</option>
+                                      <option value="sgo-estero">Santiago del Estero</option>
+                                      <option value="tierra-fuego">Tierra del Fuego</option>
+                                      <option value="tucuman">Tucuman</option>
+                            </select>
+                            <li><form method="post" action="/send/">Fecha desde:
+                            <input type="date" value="dd-mm-yyyy">
+                        <li<form method="post" action="/send/">Fecha desde:
+                            <input type="date" value="dd-mm-yyyy">
+                       
+                        
+                    </article>
+                </section>  
+                <div class="grid-envios-titulo">Envíos en total: 497</div>
+                <article class="grid-envios">
+                    <label class="titulos-envio">
+                    <input type="checkbox" checked="checked"></label>
+                    <div class="titulos-envio"> Acciones </div>
+                    <div class="titulos-envio"> Nº Seguimiento</div>
+                    <div class="titulos-envio"> Nº Operación</div>
+                    <div class="titulos-envio"> Fecha alta</div>
+                    <div class="titulos-envio"> Estado envío</div>
+                    <div class="titulos-envio"> Insumo</div>
+                    <div class="titulos-envio"> Destinatario</div>
+                    <div class="titulos-envio"> Suc. de Retiro</div>
+                    <!-- <div class="titulos-envio"> Detalles</div> -->
+                    
+                    <label class="texto-envio">
+                        <input type="checkbox"></label> 
+                    <div class="texto-envio"> <img class="logo-envios" src="assets/img/imagenes/logos-accciones2.svg" alt="imagen para el logo"> </div>
+                    <div > </div>
+                    <div class="texto-envio"> 3558312</div>
+                    <div > </div>
+                    <div > </div>
+                    <div class="texto-envio"> Nacional</div>
+                    <div class="texto-envio"> Maite Fernández</div>
+                    <div class="texto-envio"> 9 DE JULIO</div>
+                    
+                    <label class="texto-envio">
+                        <input type="checkbox"></label>
+                    <div class="texto-envio"> <img class="logo-envios" src="assets/img/imagenes/logos-accciones.svg" alt="imagen para el logo"> </div>
+                    <div class="texto-envio"> 360000853360880</div>
+                    <div class="texto-envio"> 3558296</div>
+                    <div class="texto-envio"> 12/04/2023 11:07:33</div>
+                    <div class="texto-envio"> Nuevo</div>
+                    <div class="texto-envio"> Nacional</div>
+                    <div class="texto-envio"> Marina Pratto</div>
+                    <div class="texto-envio"> SANTA FE</div>
+                    
+                    <label class="texto-envio">
+                        <input type="checkbox"></label>
+                    <div class="texto-envio"> <img class="logo-envios" src="assets/img/imagenes/logos-accciones2.svg" alt="imagen para el logo"> </div>
+                    <div class="texto-envio"> +00000034370970</div>
+                    <div class="texto-envio"> 604350</div>
+                    <div class="texto-envio"> 15/07/2023 05:07:08</div>
+                    <div class="texto-envio"> Nuevo</div>
+                    <div class="texto-envio"> Nacional</div>
+                    <div class="texto-envio"> Leonel N. Lorenzo</div>
+                    <div class="texto-envio"> TUCUMAN</div>
+
+                    <label class="texto-envio">
+                        <input type="checkbox"></label>
+                    <div class="texto-envio"> <img class="logo-envios" src="assets/img/imagenes/logos-accciones1.svg" alt="imagen para el logo"> </div>
+                    <div class="texto-envio"> </div>
+                    <div class="texto-envio"> 3755053</div>
+                    <div > </div>
+                    <div > </div>
+                    <div class="texto-envio"> Nacional</div>
+                    <div class="texto-envio"> Testing Testing</div>
+                    <div class="texto-envio"> LA PLATA (CALLE 2)</div>
+                                        
+                    <label class="texto-envio">
+                        <input class="prue" type="checkbox"></label>
+                    <div class="texto-envio"> <img class="logo-envios" src="assets/img/imagenes/logos-accciones2.svg" alt="imagen para el logo"> </div>
+                    <div class="texto-envio"> +0000041350420</div>
+                    <div class="texto-envio"> 3553297</div>
+                    <div class="texto-envio"> 09/04/2021 06:04:04</div>
+                    <div class="texto-envio"> Rechazado</div>
+                    <div class="texto-envio"> CD Nacional</div>
+                    <div class="texto-envio"> Maximiliano Camasta</div>
+                    <div class="texto-envio"> AZUL</div>
+                    
+                </article>
+                
+    </main>
+    <!-- Pie de página -->
+    <footer class="login-container2">
+        <section class="row">     
+        <article class="column">
+            <h4>¿Qué necesitás hacer?</h4>
+            <ul >
+                <li><a href="sucursal.html">Buscar sucursal</a></li>
+                <li><a href="envios.html">Ver mis envíos</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </article>
+        <article class="column">
+            <h4>Nosotros</h4>
+            <ul>
+                <li><a href="#">Segmentos</a></li>
+                <li><a href="#">Sustentabilidad</a></li>
+                <li><a href="#">Trabajá con nosotros</a></li>
+            </ul>
+        </article>
+        <article class="column">
+            <h4>Ayuda</h4>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="tel:+5408001221112">0800-122-1112</a></li>
+                <li><a href="mailto:atenciondigital@xpress.com?Subject=Aquí%20el%20asunto%20del%20mail">atenciondigital@xpress.com</a></li>
+            </ul>
+        </article>
+         <article class="column">
+            <h4>Mantenerse actualizado</h4>
+        <article class="search"><input type="email" id="actualizado" placeholder="Ingresá tu E-mail">
+        <button type="submit" class="email">
+        <i class="fa-solid fa-paper-plane"></i>
+        </button>
+        </article>
+        </article>
+         <hr class="hr-index">
+        <div>
+           <ul>
+                <li class="li-logos"><a href="https://www.youtube.com" target="_blank"><img class="logos-contactanos" src="assets/img/imagenes/YouTube.png" alt="YouTube">
+                </a></li> 
+                <li class="li-logos"><a href="https://www.instagram.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/instagram.svg" alt="Instagram">
+                </a></li>
+                <li class="li-logos"><a href="https://twitter.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/X_logo.svg" alt="X">
+                </a></li>
+                <li class="li-logos"><a href="https://www.facebook.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/facebook.svg" alt="Facebook">
+                </a></li>    
+            </ul>
+            <a title="Volver a Inicio" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
+        </div>
+        </section> 
+</body>
+</html>

@@ -14,25 +14,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets\css\styles.css">    
+        <link rel="stylesheet" type="text/css" href="assets\css\styles.css">  <!-- Usa styles.css -->    
     <title>XPress | Tus envios llegan mas rápido</title>
 </head>
 <body>
     <header><!-- Logo e información del sitio -->
-        <nav >
-            <div class="login-container">
-                <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a>
-                <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html">
+        <nav> <!-- Barra de navegación -->
+            <div class="login-container"> <!-- class de navbar -->
+                <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a> <!-- Logo y link al index -->
+                <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html"> <!-- Usario registrado / link a dashboard -->
                     <i class="far fa-user-circle"></i> Juan Pérez </a>
             </div>
         </nav>  
     </header>
-        <!-- Barra de navegación -->
+    <!-- Contenido principal -->
 <main>
     <section> 
         <p>Dashboard de control y seguimiento</p>
         <hr>
-        <article class="dashboard-container">
+        <article class="dashboard-container"> <!-- class del main -->
+            <!-- botones de estado de paquetes -->
             <a title="Estado: en progreso" href="envios.html"><img class="logo3" src="assets/img/imagenes/estado-progreso.svg" alt="Estado: en progreso" ></a> 
             <a title="Estado: pendiente" href="ver-envios.html"><img class="logo3" src="assets/img/imagenes/estado-pendiente.svg" alt="Estado: pendiente" ></a> 
             <a title="Estado: completado" href="ver-envios.html"><img class="logo3" src="assets/img/imagenes/estado-completo.svg" alt="Estado: completado" ></a>
@@ -41,17 +42,17 @@
 </main>
 
         <!-- Pie de página -->
-        <footer class="login-container2">
+        <footer class="login-container2"> <!-- class del footer -->
             <section class="row">     
             <article class="column">
+                <!-- enlaces de footer -->
                 <h4>¿Qué necesitás hacer?</h4>
                 <ul >
                     <li><a href="sucursal.html">Buscar sucursal</a></li>
                     <li><a href="ver-envios.html">Ver mis envíos</a></li>
-                    <li><a href="precios.html">Ver precios</a></li>
+                    <li><a href="contacto.html">Contactanos</a></li>
                 </ul>
             </article>
-        
             <article class="column">
                 <h4>Nosotros</h4>
                 <ul>
@@ -62,23 +63,23 @@
             </article>
             <article class="column">
                 <h4>Ayuda</h4>
-               <ul>
+                <ul>
                     <li><a href="#">Preguntas frecuentes</a></li>
-                    <li><a href="#">0800-122-1112</a></li>
-                    <li><a href="#">atenciondigital@xpress.com</a></li>
+                    <li><a href="tel:+5408001221112">0800-122-1112</a></li>
+                    <li><a href="mailto:atenciondigital@xpress.com?Subject=Aquí%20el%20asunto%20del%20mail">atenciondigital@xpress.com</a></li>
                 </ul>
             </article>
             <article class="column" >
                 <h4>Mantenerse actualizado</h4>
-            <article class="search1"><input type="email" id="actualizado" placeholder="Ingresá tu E-mail">
+            <article class="search1"><input type="email" id="actualizado" placeholder="Ingresá tu E-mail"> <!-- insertar tu email -->
             <button type="submit" class="email">
             <i class="fa-solid fa-paper-plane"></i>
             </button>
             </article>
             </article>
-            <hr class="hr-index">
+            <hr class="hr-index"> <!-- regla horizontal de footer -->
             <div>
-                <ul>
+                <ul> <!-- links a redes sociales -->
                     <li class="li-logos"><a href="https://www.youtube.com" target="_blank"><img class="logos-contactanos" src="assets/img/imagenes/YouTube.png" alt="YouTube">
                     </a></li> 
                     <li class="li-logos"><a href="https://www.instagram.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/instagram.svg" alt="Instagram">
@@ -88,6 +89,7 @@
                     <li class="li-logos"><a href="https://www.facebook.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/facebook.svg" alt="Facebook">
                     </a></li>    
                 </ul>
+                <!-- logo con link a index -->
                 <a title="Volver a Inicio" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
             </div>
             </section>

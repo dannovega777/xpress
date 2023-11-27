@@ -28,7 +28,7 @@ h4 {color: #7AB317;
 border: #ffffff solid 0.15rem;}
 
 /*class de navbar*/   
-.login-container {width: 100vw;
+.login-container {width: 98.5vw;
       height: 7rem; 
       background-color: #0B2E59;
       display: flex;
@@ -44,7 +44,7 @@ border: #ffffff solid 0.15rem;}
       opacity: 0.8;}
      
 /*class de footer*/  
-.login-container2 {width: 100vw;
+.login-container2 {width: 98.5vw;
       background-color: #0B2E59;
       height: auto;}
 
@@ -64,7 +64,7 @@ li {text-align: left;
 
 /* Clear floats after the columns */
 .row:after {content: "";
-      display: table;
+      display: grid;
       clear: both;} 
 
 /*propiedades de los .svg de logos de redes sociales del footer*/
@@ -206,4 +206,47 @@ span.psw {float: right;}
       display: flex;
       position: relative;
       margin: 1.5rem auto 1rem auto;}   
+
+#subject {width: 100%; 
+      height: 15rem;}
+
+.column1 {
+      float: left;
+      width: 50%;}
+.row:after {
+            content: "";
+            display: table;
+            clear: both;}
+
+.container > select {
+      width: 100%;
+      border-radius: 2.5rem;
+      border: 0.125rem solid #0B2E59;
+      color: #0B2E59;
+      padding: 0.75rem 1.25rem;
+      margin: 0.5rem 0;
+      font-size: 0.85rem;}
+
+.container > textarea {
+      width: 100%;
+      border-radius: 1.25rem;
+      background-color: transparent;
+      border: 0.125rem solid #7AB317;
+      outline: none;
+      color: #0B2E59;
+      padding: 0.75rem 1.25rem;
+      margin: 0.5rem 0;
+      display: inline-block;
+      box-sizing: border-box}
+
+.margin {margin: 0 12rem 0 12rem;}
+
+.container > .prueba {background: #7ab317;}
+
+
+#cerrar {margin-bottom: 24rem;
+
+padding: 0.5rem;
+background-color: #0B2E59; 
+color: #ffffff;}
 
