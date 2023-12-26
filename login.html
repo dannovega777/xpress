@@ -35,7 +35,8 @@
             </article>
             <!-- form de login --> 
             <article class="login-form">
-                <form action="#" method="post">
+                <!--<form action="#" method="post"> -->
+                    <form>
                 <p>Ingresá y seguí tus envíos, las 24 horas, desde donde estés.</p>
                     <article class="container">
                         <label for="uname"><b>Usuario</b></label>
@@ -49,8 +50,8 @@
                         <input type="checkbox" checked="checked" name="Recordame"> Recordame
                         <span class="psw"> <a href="#">Olvidé mi Contraseña</a> </span>
                         </label>
-                        <button class="prueba" onclick="window.modal1.showModal();">Registrarte</button>
-
+                        <button class="modal-btn" onclick="window.modal1.showModal();">Registrarte</button> <!-- apertura de modal -->
+                        <!-- contenidode modal -->
                         <dialog id="modal1">
                             <article class="login-form">
                                 <form>
@@ -67,7 +68,7 @@
                                             <label for="text"><b>Teléfono</b></label>
                                             <input type="password" placeholder="Telefono *" name="tel" required>
                                             <i class="fa-solid fa-phone"> </i>
-                                            <button type="submit">Registrar</button>
+                                            <button type="submit">Registrar</button>  <!-- cierre de modal -->
                                     </article>
                                 </form>
                             <label id="cerrar" onclick="window.modal1.close();">X</label>
