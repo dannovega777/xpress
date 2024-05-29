@@ -27,7 +27,7 @@ h4 {color: #7AB317;
 /* INDEX.html */
 /* NAVBAR */
 /*class de navbar*/      
-.login-container {width: 98.5vw;
+.login-container-fluid {width: 98.5vw;
       height: 7rem; 
       background-color: #0B2E59;
       display: flex;
@@ -104,7 +104,7 @@ font-size: 1rem;}
       border-radius: 0rem 0.313rem 0.313rem 0rem;}
 
 /*class de "¡Te damos la Bienvenida!"*/
-.texto-bienvenida {
+.texto-bienvenida-container-fluid {
       position: absolute;
       bottom: 46%;
       left: 10%;
@@ -117,7 +117,7 @@ font-size: 1rem;}
 /*class de "¿Querés saber dónde está tu envío?"*/
 .texto-titulo1 {position: absolute;
       bottom: 5rem;
-      left: 10%;
+     /*left: 10%;*/
       text-align: justify;
       font-size: 4.18rem;
       color: #ffffff;
@@ -127,7 +127,7 @@ font-size: 1rem;}
 .texto-titulo2 {position: absolute;
       font-weight: 700;
       bottom: 0.8rem;
-      left: 10%;
+      /*left: 10%;*/
       text-align: justify;
       font-size: 4.18rem;
       color: #7AB317;
@@ -136,7 +136,6 @@ font-size: 1rem;}
 
 .texto-pregunta {position: absolute;
       bottom: 0.5rem;
-      left: 10%;
       text-align: justify;
       font-size: 1.45rem;
       color: #ffffff;
