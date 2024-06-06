@@ -1,0 +1,19 @@
+*{font-family:Montserrat;} /*fuente general*/
+
+.navbar {width: 98.5vw;
+    height: 7rem; 
+    background-color: #0B2E59;
+    display: flex;
+    justify-content:space-between; 
+    box-shadow: 0 1px 4px #ffffff;}
+
+    .texto-titulo1 {position: left;
+        bottom: 5rem;
+        left: 10%;
+        text-align: justify;
+        font-size: 4.18rem;
+        color: #ffffff;
+        line-height: 95%;
+        z-index: 45;}
+
+.bienvenida {font-size: 4.18rem;}

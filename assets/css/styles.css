@@ -13,9 +13,8 @@ hr {width: 97%;
 
 /*titulos h4 generales*/
 h4 {color: #7AB317;
-      margin: 0.8rem 2.4rem;
-      font-size: 1.5rem;
-      margin-bottom: -0.5rem;}
+      font-size: 1.2rem;
+      }
 
 /*texto de parrafo generales*/
       p {font-size: 1.8rem;
@@ -27,7 +26,7 @@ h4 {color: #7AB317;
 /* INDEX.html */
 /* NAVBAR */
 /*class de navbar*/      
-.login-container-fluid {width: 98.5vw;
+.login-container {width: 98.5vw;
       height: 7rem; 
       background-color: #0B2E59;
       display: flex;
@@ -56,24 +55,25 @@ h4 {color: #7AB317;
 /*class de imagen de fondo*/
 .imagen-fondo {width: 98.5vw;
       height: auto;
-      z-index: -5;}  
+      }  
 
 /*class del articulo de barra de seguimiento*/
-.search {width: 32rem;
+.search {
       display: flex;
       position: relative;
-      margin: 5rem 0rem 0rem -5rem;}
+      }
     
 /*class de barra de seguimiento*/
-.searchTerm {width: 90%;
+.searchTerm {width: 15%;
       border: 0.188rem solid #fdfdfd;
       border-right: none;
       padding: 0.313rem;
-      height: 1.25rem;
+      height: 2.3rem;
+      width: 26rem;
       border-radius: 0.313rem 0 0 0.313rem;
       outline: none;
-      color: #fdfdfd;
-      margin: 0rem 0rem 0rem 3rem;}        
+      color: #fdfdfd;} 
+
 .searchTerm:focus{
 color: #0B2E59;
 font-size: 1rem;}
@@ -81,7 +81,7 @@ font-size: 1rem;}
 /*class de botón de barra de seguimiento*/
 .searchButton {
       width: 2.813rem;
-      height: 2.25rem;
+      height: 2.3rem;
       border: 0.063rem solid #7AB317;
       background: #7AB317;
       text-align: center;
@@ -91,8 +91,7 @@ font-size: 1rem;}
       font-size: 1.25rem;}
 
 /*propiedades texto en barra de busqueda*/
-::placeholder{color: #b3b3b3;
-      opacity: 0.8;
+::placeholder{color: #0B2E59;
       font-size: 1rem;}
 
 /*propiedades de botón de barra de busqueda*/
@@ -104,38 +103,33 @@ font-size: 1rem;}
       border-radius: 0rem 0.313rem 0.313rem 0rem;}
 
 /*class de "¡Te damos la Bienvenida!"*/
-.texto-bienvenida-container-fluid {
-      position: absolute;
-      bottom: 46%;
+.texto-bienvenida {
+      top: 10%;
       left: 10%;
       text-align: justify;
       font-size: 4.18rem;
       color: #ffffff;
-      line-height: 95%;
-      z-index: 45;}
+      line-height: 15%;}
 
 /*class de "¿Querés saber dónde está tu envío?"*/
-.texto-titulo1 {position: absolute;
-      bottom: 5rem;
-     /*left: 10%;*/
+.texto-titulo1 {bottom: 7rem;
+      left: 50%;
       text-align: justify;
       font-size: 4.18rem;
       color: #ffffff;
       line-height: 95%;
       z-index: 45;}
 
-.texto-titulo2 {position: absolute;
-      font-weight: 700;
-      bottom: 0.8rem;
-      /*left: 10%;*/
+.texto-titulo2 {font-weight: 700;
+      bottom: 2.9rem;
+      left: 10%;
       text-align: justify;
       font-size: 4.18rem;
       color: #7AB317;
-      line-height: 95%;
-      z-index: 45;}
+      line-height: 90%}
 
-.texto-pregunta {position: absolute;
-      bottom: 0.5rem;
+.texto-pregunta {bottom: 0.5rem;
+      left: 10%;
       text-align: justify;
       font-size: 1.45rem;
       color: #ffffff;
@@ -170,10 +164,11 @@ svg {color: #ffffff;
 .column1 li {margin-bottom: 0.5rem;}
 
 /*class de footer*/  
-.login-container2 {width: 98.5;
+.login-container2 {
       background-color: #0B2E59;
       height: auto;
-margin: 0 -0.5rem;}
+      padding-left: 2.8rem;
+}
 
 /*propiedades lista general*/
 li {text-align: left;
@@ -181,7 +176,7 @@ li {text-align: left;
       list-style:none}
 
 /*propiedades de los logos de redes sociales del footer*/
-.li-logos {float: right;
+.list-group-item {float: right;
       list-style:none;}
 
 /*propiedades de los enlaces de los enlaces del footer*/
@@ -195,9 +190,9 @@ li {text-align: left;
       clear: both;} 
 
 /*propiedades de los .svg de logos de redes sociales del footer*/
-.logos-contactanos {width: 5rem;
+.logos-contactanos {width: 4rem;
       float: unset;
-      margin: 1rem 2.8rem 1rem 0rem;}
+      }
 
 /* Los botones reciben el efecto que su opacidad desciende cuando son elegidos */
 button:hover {opacity: 0.8;}
@@ -211,7 +206,7 @@ button:hover {opacity: 0.8;}
 #actualizado {width: 60%;
       border: 0.188rem solid #fdfdfd;
       border-right: none;
-      padding: 0.313rem;
+      padding: 0.92rem;
       height: 1.25rem;
       border-radius: 0.313rem 0 0 0.313rem;
       outline: none;
@@ -234,7 +229,7 @@ button:hover {opacity: 0.8;}
 
 /*class de botones de sucursal y ver envíos*/   
 .login-container3 {width: 98.5vw;
-      height: 13rem;
+      height: 11rem;
       display:flex;
       justify-content:center;}
 

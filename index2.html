@@ -20,31 +20,59 @@
 <body>
     <header ><!-- Logo e información del sitio -->
         <nav> <!-- Barra de navegación -->
-            <div class="login-container-fluid"> <!-- class de navbar -->
+            <div class="login-container"> <!-- class de navbar -->
                   <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a> <!-- Logo y link al index -->
                   <button class="boton" onclick="location.href='login.html'" type="button">INGRESAR</button> <!-- botón de Ingreso -->
             </div>
         </nav>  
+
+        <!--<nav class="navbar">
+            <div class="container">
+              <a class="navbar-brand" href="index.html"> <img src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" width="250" >
+              </a>
+              <button class="boton" onclick="location.href='login.html'" type="button">INGRESAR</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                INGRESAR
+              </button>
+            </div>
+          </nav>-->
     </header>
     <!-- Contenido principal -->
     <main>
         <!-- Imagen de fondo index -->
-        <img class="imagen-fondo" src="assets/img/imagenes/familia-fondo1.png" alt="imagen de fondo" >  
-        <!-- texto de bienvenida y barra de seguimiento -->  
-        <section class="texto-bienvenida-container-fluid">
-            <article class="row">
-                <p class="col-auto text-sm fw-normal texto-titulo1 ">¡Te damos la</p>
+        <!--<section class="card bg-dark text-white" >
+            <img src="assets/img/imagenes/familia-fondo1.png" class="img-fluid card-img" alt="Imagen de fondo">
+            <article class="card-img-overlay banner">
+                <p class="text-left fw-bold bienvenida">¡Te damos la</p>
                 <p class="col-auto fw-bolder texto-titulo2">Bienvenida!</p>
-                </article> 
-                <article class="row">
-                <p class="col-auto texto-pregunta">¿Querés saber dónde está tu envío?</p>
-                </article>
-                <input type="text" class="searchTerm" placeholder="Ingresá  el número de seguimiento"> <!-- barra de seguimiento -->
-                <a title="envios" href="envios.html"><button type="submit" class="searchButton"><!-- botón de barra de seguimiento -->
-                <i class="fa fa-search"></i>
-                </button></a>
-            
-        </section>
+                <p class="col-auto texto-pregunta">¿Querés saber dónde está tu envío?</p> 
+            </article>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Ingresá el número de seguimiento" aria-label="Ingresá  el número de seguimiento">
+                    <button class="searchButton" type="submit"><i class="fa fa-search"></i>
+                    </button>
+                  </form> -->
+                
+<!-- Imagen de fondo index -->
+
+<!-- texto de bienvenida y barra de seguimiento -->  
+
+<div class="card text-bg-dark">
+    <img src="assets/img/imagenes/familia-fondo1.png" class="img-fluid card-img" alt="familia-fondo">
+    <div class="card-img-overlay texto-bienvenida">
+      <p class="fs-4.18rem card-text  texto-titulo1">¡Te damos la</p>
+      <p class="card-text fs-4.18rem texto-titulo2">Bienvenida!</p>
+      <p class="card-text fs-1.45rem texto-pregunta">¿Querés saber dónde está tu envío?</small></p>
+      <article class="search">
+      <input type="text" class="searchTerm width: 175rem" placeholder="Ingresá el número de seguimiento"> <!-- barra de seguimiento -->
+        <a title="envios" href="envios.html"><button type="submit" class="searchButton">
+        <i class="fa fa-search"></i><!-- botón de barra de seguimiento -->
+        </button></a>
+    </article>
+    </div>
+  </div>
+
+
         <!-- Texto de soluciones personalizadas y botones de sucursales y ver mis envios -->  
         <section> 
             <p class=subtitulo>¡Tus <b> envíos </b> llegan más <b> rápido!</b></p>
@@ -57,58 +85,108 @@
     <!-- Pie de página -->
         <!-- Texto de soluciones personalizadas y botones de sucursales y ver mis envios --> 
         <footer class="login-container2"> <!-- class de footer -->
-        <section class="row">     
-        <article class="column">
-            <!-- enlanes de footer -->
-            <h4 class="col-auto fs-4 fw-bold">¿Qué necesitás hacer?</h4>
-            <ul >
-                <li><a href="sucursal.html">Buscar sucursal</a></li>
-                <li><a href="ver-envios.html">Ver mis envíos</a></li>
-                <li><a href="contacto.html">Contactanos</a></li>
-            </ul>
-        </article>
-        <article class="column">
-            <h4 class="col-auto fs-4 fw-bold">Nosotros</h4>
-            <ul>
-                <li><a href="#">Segmentos</a></li>
-                <li><a href="#">Sustentabilidad</a></li>
-                <li><a href="#">Trabajá con nosotros</a></li>
-            </ul>
-        </article>
-        <article class="column">
-            <h4 class="col-auto fs-4 fw-bold">Ayuda</h4>
-            <ul>
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="tel:+5408001221112">0800-122-1112</a></li>
-                <li><a href="mailto:atenciondigital@xpress.com?Subject=Aquí%20el%20asunto%20del%20mail">atenciondigital@xpress.com</a></li>
-            </ul>
-        </article>
-        <article class="column" >
-            <h4 class="col-auto fs-4 fw-bold">Mantenerse actualizado</h4>
-        <article class="search1"><input type="email" id="actualizado" placeholder="Ingresá tu E-mail"> <!-- Ingresá tu email -->
-            <button type="submit" class="email">
-            <i class="fa-solid fa-paper-plane"></i>
-            </button>
-        </article>
-        </article>
+        <section class="row"> <!-- enlanes de footer -->    
+            <div class="py-5">
+              <div class="row">
+                <div class="col-6  col-md-2 mb-3">
+                  <h4>¿Qué necesitás hacer?</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="sucursal.html" class="nav-link p-0 text-light">Buscar sucursal</a></li>
+                        <li class="nav-item mb-2"><a href="ver-envios.html" class="nav-link p-0 text-light">Ver mis envíos</a></li>
+                        <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-light">Contactanos</a></li>
+                    </ul>
+                </div>
+              
+                <div class="col-3 col-md-2 mb-3">
+                  <h4>Nosotros</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-1 text-light">Segmentos</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Sustentabilidad</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Trabajá con nosotros</a></li>
+                    </ul>
+                </div>
+          
+                <div class="col-6 col-md-2 mb-3">
+                  <h4>Ayuda</h4>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Preguntas frecuentes</a></li>
+                        <li class="nav-item mb-2"><a href="tel:+5408001221112" class="nav-link p-0 text-light">0800-122-1112</a></li>
+                        <li class="nav-item mb-2"><a href="mailto:atenciondigital@xpress.com?Subject=Aquí%20el%20asunto%20del%20mail" class="nav-link p-0 text-light">atenciondigital@xpress.com</a></li>
+                    </ul>
+                </div>
+          
+                <div class="col-md-5 offset-md-1 mb-3">
+                  <form>
+                    <h4>Mantenerse actualizado</h4>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-1">
+                      <label for="newsletter1" class="visually-hidden">Ingresá tu E-mail</label>
+                      <input id="actualizado" type="text" class="form-control" placeholder="Ingresá tu E-mail">
+                      <button type="submit" class="email">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
         <hr class="hr-index"> <!-- hr de footer -->
-        <div class="row">  >
-            <ul> <!-- links a redes sociales -->
-                <div class="col-auto" title="Volver a Inicio" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
-                <li class="li-logos"><a href="https://www.youtube.com" target="_blank"><img class="logos-contactanos" src="assets/img/imagenes/YouTube.png" alt="YouTube">
-                </a></li> 
-                <li class="li-logos"><a href="https://www.instagram.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/instagram.svg" alt="Instagram">
-                </a></li>
-                <li class="li-logos"><a href="https://twitter.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/X_logo.svg" alt="X">
-                </a></li>
-                <li class="li-logos"><a href="https://www.facebook.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/facebook.svg" alt="Facebook">
-                </a></li>  
-            </ul> 
-            <!-- logo con link a index -->
+         <!-- links a redes sociales -->
+
+         <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>  <!-- logo con link a index -->
+              
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item"><a href="https://www.youtube.com" target="_blank"><img class="logos-contactanos" src="assets/img/imagenes/YouTube.png" alt="YouTube">
+                    </a></li> 
+                    <li class="list-group-item"><a href="https://www.instagram.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/instagram.svg" alt="Instagram">
+                    </a></li>
+                    <li class="list-group-item"><a href="https://twitter.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/X_logo.svg" alt="X">
+                    </a></li>
+                    <li class="list-group-item"><a href="https://www.facebook.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/facebook.svg" alt="Facebook">
+                    </a></li>  
+                  </ul>
+              </div>
+            </nav>
+          </nav>
+                    
             
         </div>
         </section>
     </footer>
+
+    <!-- MODALES -->
+    <!-- Modal Login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">INGRESAR</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email </label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                 
+              
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">INGRESAR</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>
