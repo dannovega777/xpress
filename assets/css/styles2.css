@@ -13,9 +13,8 @@ hr {width: 97%;
 
 /*titulos h4 generales*/
 h4 {color: #7AB317;
-      margin: 0.8rem 2.4rem;
-      font-size: 1.5rem;
-      margin-bottom: -0.5rem;}
+      font-size: 1.2rem;
+}
 
 /*texto de parrafo generales*/
       p {font-size: 1.8rem;
@@ -28,25 +27,24 @@ h4 {color: #7AB317;
 border: #ffffff solid 0.15rem;}
 
 /*class de navbar*/   
-.login-container {width: 98.5vw;
-      height: 7rem; 
+.login-container-fluid {width: 98.5vw;
       background-color: #0B2E59;
-      display: flex;
-      justify-content:space-between; 
-     }
+     display: flex;
+     justify-content:space-between; 
+     box-shadow: 0 1px 4px #ffffff;}
 
 /*imagen de logo de navbar*/
-.logo {width: 16rem;
-      margin: 1rem 2rem 0.5rem 2rem;}
+.logo {margin: 1rem 2rem 0.5rem 2rem;}
 
 /*propiedades texto de "Mantenerse actualizado"*/
 ::placeholder{color: #b3b3b3;
-      opacity: 0.8;}
+      opacity: 0.8;
+      font-size: 1rem;}
      
 /*class de footer*/  
-.login-container2 {width: 98.5vw;
-      background-color: #0B2E59;
-      height: auto;}
+.login-container2 {background-color: #0B2E59;
+      height: auto;
+      padding-left: 2.8rem;}
 
 /*propiedades lista general*/
 li {text-align: left;
@@ -54,8 +52,11 @@ li {text-align: left;
       list-style:none}
 
 /*propiedades de los logos de redes sociales del footer*/
-.li-logos {float: right;
-      list-style:none;}
+.list-group-item {
+      list-style:none;
+      background-color: #0B2E59;
+      border-color: #0B2E59;
+      }
   
 /*propiedades de los enlaces de los enlaces del footer*/
 .column {
@@ -68,19 +69,17 @@ li {text-align: left;
       clear: both;} 
 
 /*propiedades de los .svg de logos de redes sociales del footer*/
-.logos-contactanos {width: 5rem;
+.logos-contactanos {width: 3.5rem;
       float: unset;
-      margin: 1rem 4rem 1rem 0rem;}
+      margin-right: 1.5rem}
 
 /*class del botón del formulario de login*/
-.container button {background-color: #0B2E59;
+.form-group button {background-color: #0B2E59;
       color: #ffffff;
       border-radius: 1.5rem;
       padding: 0.875rem 1.25rem;
       margin: 0.5rem 0;
       border: none;
-      cursor: pointer;
-      width: 41rem;
       font-size: 1.3rem;}
 
 /*propiedades texto del menú de login*/
@@ -95,21 +94,16 @@ button:hover {opacity: 0.8;}
 span.psw {float: right;}
 
 /*class del articulo del formulario de login*/
-.container {position: relative;
+.form-group {position: relative;
       text-align:left;
       color: #0B2E59;}
 
 /*class del texto del container del formulario de login*/
-.container p{position: absolute;
+.form-group p{position: absolute;
       top: 50%;
       left: 25%;
       transform: translate(-50%, -50%);
       font-size: 1.5rem;}
-
-/*propiedades del logo Xpress del footer*/
-.logo-pie {width: 16rem;
-      width: 16rem;
-      margin: 1rem 0rem 1rem 2.5rem;;}
 
 /* LOGIN.html */
 /*class del articulo del formulario de login*/
@@ -128,7 +122,7 @@ span.psw {float: right;}
       margin-bottom: 0.75rem}
 
 /*id de sección del login*/ 
-#banner {width: 97vw;
+#banner {width: 98.5vw;
       display: flex;
       justify-content:space-between;}
 
@@ -136,19 +130,16 @@ span.psw {float: right;}
 .boton {color: #ffffff;
       background-color: #0B2E59;
       padding: 0.5rem 1.2rem;
-      border: 0.8rem, #ffffff, solid;
       border-radius: 3.5rem;
       text-decoration: none;
-      display: inline;
-      align-items:baseline;
       font-size: 1rem;
-      margin: 2rem 4rem 1rem 0.8rem;
+      margin: 1.5rem 4rem 1rem 0.8rem;
       transition-duration: 0.4s;
       cursor: pointer;
       height: 3rem}
 
 /*propiedades de la imagen de la carta y paquete*/
-.letter {width: 100%;
+.letter-fluid {width: 100%;
       height: auto}
 
 /*class de textos del menú de login*/ 
@@ -156,17 +147,17 @@ span.psw {float: right;}
       color: #0B2E59;
       font-size: 1rem;}
 
-/* propiedades de los inputs y fontawsome en formulario de login y register */ 
-.container > i {padding: 12px;
+/* propiedades de los inputs y fontawsome en formulario de login y register
+.form-group > i {padding: 0.75rem;
       border-radius: 50%;
       background: #7AB317;
       color: #ffffff;
-      position: absolute;
+      
       font-size: 0.8rem;
-      margin: -3rem 0 0 38.4rem;}
+      margin: -3rem 0 0 38.4rem;} */ 
 
-.container > input {
-      width: 100%;
+.form-group > input {
+      width: 40vw;
       border-radius: 2.5rem;
       background-color: transparent;
       border: 0.125rem solid #0B2E59;
@@ -186,7 +177,7 @@ span.psw {float: right;}
 #actualizado {width: 60%;
       border: 0.188rem solid #fdfdfd;
       border-right: none;
-      padding: 0.313rem;
+      padding: 0.92rem;
       height: 1.25rem;
       border-radius: 0.313rem 0 0 0.313rem;
       outline: none;
@@ -227,7 +218,7 @@ span.psw {float: right;}
       margin: 0.5rem 0;
       font-size: 0.85rem;}
 
-.container > textarea {
+.form-group > textarea {
       width: 100%;
       border-radius: 1.25rem;
       background-color: transparent;
@@ -241,8 +232,11 @@ span.psw {float: right;}
 
 .margin {margin: 0 12rem 0 12rem;}
 
-.container > .modal-btn {background: #7ab317;}
+.form-group > .modal-btn {background: #7ab317;}
 
+.form-group > .prueba {
+      background: #7ab317;
+  }
 
 #cerrar {margin-bottom: 24rem;
 
@@ -250,3 +244,19 @@ padding: 0.5rem;
 background-color: #0B2E59; 
 color: #ffffff;}
 
+.card {border-radius: 0%;
+      border-color: unset;}
+
+.modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 42vw;
+      color: var(--bs-modal-color);
+      pointer-events: auto;
+      background-color: var(--bs-modal-bg);
+      background-clip: padding-box;
+      border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+      border-radius: var(--bs-modal-border-radius);
+      outline: 0;
+  }

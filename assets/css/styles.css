@@ -21,21 +21,19 @@ h4 {color: #7AB317;
       color: #0B2E59;
       text-align: center;}
 
-.subtitulo {padding-left: 3rem;}
+/* .subtitulo {padding-left: 100%;}*/
 
 /* INDEX.html */
 /* NAVBAR */
 /*class de navbar*/      
-.login-container {width: 98.5vw;
-      height: 7rem; 
-      background-color: #0B2E59;
+.login-container-fluid {width: 98.5vw;
+       background-color: #0B2E59;
       display: flex;
       justify-content:space-between; 
       box-shadow: 0 1px 4px #ffffff;}
 
 /*imagen de logo de navbar*/
-.logo {width: 16rem;
-      margin: 1rem 2rem 0.5rem 2rem;}
+.logo {margin: 1rem 2rem 0.5rem 2rem;}
 
 /*propiedades botón de "Ingresar" en index*/
 .boton {color: #ffffff;
@@ -43,10 +41,8 @@ h4 {color: #7AB317;
       padding: 0.5rem 1.2rem;
       border-radius: 3.5rem;
       text-decoration: none;
-     
-      
       font-size: 1rem;
-      margin: 2rem 4rem 1rem 0.8rem;
+      margin: 1.5rem 4rem 1rem 0.8rem;
       transition-duration: 0.4s;
       cursor: pointer;
       height: 3rem}
@@ -91,7 +87,7 @@ font-size: 1rem;}
 /*propiedades texto en barra de busqueda*/
 ::placeholder{color: #b3b3b3;
       opacity: 0.8;
-      font-size: 1rem;}
+      font-size: 1vw;}
 
 /*propiedades de botón de barra de busqueda*/
 #boton-tracking {all: inherit;
@@ -106,35 +102,33 @@ font-size: 1rem;}
       top: 10%;
       left: 10%;
       text-align: justify;
-      font-size: 4.18rem;
+      
       color: #ffffff;
       line-height: 15%;}
 
 /*class de "¿Querés saber dónde está tu envío?"*/
-.texto-titulo1 {
+.texto-titulo1 {font-size: 3.5vw;
       left: 50%;
       bottom: 7rem;
       text-align: justify;
-      font-size: 4.18rem;
       color: #ffffff;
       line-height: 95%;
-      z-index: 45;}
+      }
 
-.texto-titulo2 {
+.texto-titulo2 {font-size: 3.5vw;
       font-weight: 700;
       bottom: 2.9rem;
       /*left: 10%;*/
       text-align: justify;
-      font-size: 4.18rem;
       color: #7AB317;
       line-height: 90%;}
 
-.texto-pregunta { bottom: 0.5rem;
+.texto-pregunta { font-size: 1.2vw;
+      bottom: 0.5rem;
       text-align: justify;
       left: 10%;
-      font-size: 1.45rem;
       color: #ffffff;
-      z-index: 50;}
+      line-height: 95%;}
 
 /*propiedades de los archivos .svg de los botones de sucusales y ver envios*/
 svg {color: #ffffff;
@@ -143,12 +137,19 @@ svg {color: #ffffff;
       height: 1.5rem;
       padding: 0.625rem;}
 
-/*prowropiedades de svg de botones de sucursal y ver envíos*/   
+/*propiedades de svg de botones de sucursal y ver envíos*/   
 .logo2 {width: 12rem;
-      height: auto;
+      height: 10rem;
       border-radius: 2rem;
       box-shadow: 0rem 0.063rem 0.563rem 0 #b2b3b4b9;
-      margin-left:2rem;
+      margin-left: 0.9rem;
+      padding: 1.5rem;}
+
+.logo3 {width: 12rem;
+      height: 8rem;
+      border-radius: 2rem;
+      box-shadow: 0rem 0.063rem 0.563rem 0 #b2b3b4b9;
+      margin-left:5rem;
       padding: 1.5rem;}
 
 /*propiedades de hover de botones de sucursal y ver envíos*/ 
@@ -176,8 +177,11 @@ li {text-align: left;
       list-style:none}
 
 /*propiedades de los logos de redes sociales del footer*/
-.list-group-item {float: right;
-      list-style:none;}
+.list-group-item {
+      list-style:none;
+      background-color: #0B2E59;
+      border-color: #0B2E59;
+      }
 
 /*propiedades de los enlaces de los enlaces del footer*/
 .column {
@@ -185,22 +189,16 @@ li {text-align: left;
       width: 25%;}
 
 /* Clear floats after the columns */
-.row:after {content: "";
-      display: table;
-      clear: both;} 
+
 
 /*propiedades de los .svg de logos de redes sociales del footer*/
-.logos-contactanos {width: 4rem;
+.logos-contactanos {width: 3.5rem;
       float: unset;
-      margin: 1rem 2.8rem 1rem 0rem;}
+      margin-right: 1.5rem}
 
 /* Los botones reciben el efecto que su opacidad desciende cuando son elegidos */
 button:hover {opacity: 0.8;}
 
-/*propiedades del logo Xpress del footer*/
-.logo-pie {width: 16rem;
-      width: 16rem;
-      margin: 1rem 0rem 1rem 2.5rem;;}
 
 /*propiedades de columna de "Mantenerse actualizado" de footer*/
 #actualizado {width: 60%;
@@ -263,13 +261,7 @@ span.psw {float: right;}
       margin-right:auto;}
       
 /*class container de GRID*/
-.grid-container {
-      display: grid;
-      grid-template-columns: 20% 60% 20%;
-      grid-template-rows: 3rem 5rem 5rem 5rem 5rem 2rem;
-      background-color: #ffffff;
-      justify-content: space-evenly;
-      gap: 0.08rem;
+.grid-container {background-color: #ffffff;
       margin: 0 12rem 0 12rem;}
 
 /*class de titulo de GRID*/
@@ -280,8 +272,7 @@ span.psw {float: right;}
       background-color: #7AB317;
       height: 2.8rem;}
 
-.grid-container > .grid-titulo {display: flex;
-      align-items: center;
+.grid-container > .grid-titulo {
       margin-left: 0.5rem;
       line-height: 0.7rem;}
 
@@ -293,13 +284,9 @@ span.psw {float: right;}
       padding: 0 1rem 0 1rem;}
 
 /*class de grid de "infomación de envío"*/
-.grid-info {display: grid;
-      grid-template-columns: 25% 50% 15%;
-      grid-template-rows: 3rem 4rem 4rem;
-      background-color: #ffffff;
-      justify-content: space-evenly;
-      gap: 0.08rem;
-      margin: 0 12rem 0 12rem;}
+.grid-info {background-color: #ffffff;
+      margin: 0 12rem 0 12rem;
+padding-top: 1rem;}
 
 /*class de texto de grid de "infomación de envío"*/
 .grid-info > .grid-info-envio {display: flex;
@@ -335,7 +322,7 @@ span.psw {float: right;}
 /*class de container de los select de provincia y localidad*/
 .container-sucursal {display:flex;  
       justify-content:center;
-      margin: 0.8rem 1rem 0.5rem 2rem;
+      margin: 0.8rem 1rem 0.5rem 1rem;
       padding: 0.5rem 1rem 0.5rem 2rem;}
 
 /*class de margen de select de localidad*/
@@ -343,8 +330,7 @@ span.psw {float: right;}
 
 /*propiedades de select de localidad*/
 #location {width: 25rem;
-      margin-bottom: 0.625rem;
-      margin-top: 0.625rem;
+      margin: 0.625rem 0.5rem 0.625rem 0;
       outline: 0;
       background: #ffffff;
       color: #999898;
@@ -354,7 +340,7 @@ span.psw {float: right;}
       font-size: 1rem;} 
 
 /*propiedades de titulo lista de tipo de servicio*/
-h3{margin: 0rem 0rem -1rem 25rem;
+h3{text-align: center;
 color: #0B2E59;}
 
 /*class de container de la lista de tipo de servicio*/
@@ -376,7 +362,7 @@ color: #0B2E59;}
       margin: 0.5rem 0;
       border: none;
       cursor: pointer;
-      width: 41rem;
+      width: 50vw;
       font-size: 1.3rem;}
 
 /*propiedades de Google Map*/
@@ -460,6 +446,11 @@ margin-top: auto;}
 .precio-texto {border-bottom: 0.2rem solid #ccc;
 padding-top: 1.2rem;}
 
-main {width: 98vw;}
+main {width: 98.5vw;}
 
-body {width: 98vw;}
+body {width: 98.5vw;}
+
+.card {border-radius: 0%;
+border-color: unset;}
+
+.navbar {padding: 0;}
