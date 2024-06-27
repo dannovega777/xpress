@@ -14,9 +14,8 @@ hr {width: 97%;
 
 /*titulos h4 generales*/
 h4 {color: #7AB317;
-      margin: 0.8rem 2.4rem;
-      font-size: 1.5rem;
-      margin-bottom: -0.5rem;}
+      font-size: 1.2rem;
+}
 
 /*texto de parrafo generales*/
       p {font-size: 1.8rem;
@@ -28,21 +27,27 @@ h4 {color: #7AB317;
 border: #ffffff solid 0.15rem;}
 
 /*class de navbar*/   
-.login-container {width: 98.5vw;
+.login-container-fluid {width: 98.5vw;
       height: 7rem; 
       background-color: #0B2E59;
       display: flex;
-      justify-content:space-between; 
-      box-shadow: 0 1px 4px #ffffff;}
+      justify-content:space-around; 
+      }
+
+.logo-footer {margin: 1rem 0.5rem 0.5rem 0.5rem;}    
+
+.container-fluid1 {
+      padding-right: 5rem;} 
 
 /*imagen de logo de navbar*/
 .logo {width: 16rem;
       margin: 1rem 2rem 0.5rem 2rem;}
 
 /*class de footer*/  
-.login-container2 {width: 98.5vw;
-      background-color: #0B2E59;
-      height: auto;}
+.container-fluid1 {background-color: #0B2E59;
+      height: auto;
+      padding-left: 2.8rem;
+      padding-right: 2.8rem}
 
 /*propiedades lista general*/
 li {text-align: left;
@@ -64,9 +69,9 @@ li {text-align: left;
       clear: both;} 
 
 /*propiedades de los .svg de logos de redes sociales del footer*/
-.logos-contactanos {width: 5rem;
-      float: unset;
-      margin: 1rem 2.8rem 1rem 0rem;}
+.text-muted {
+      --bs-text-opacity: 1;
+      color: #7ab317!important;}
 
 /* VER-ENVIOS.HTML 
 /*propiedades de tabla*/ 
@@ -74,20 +79,6 @@ li {text-align: left;
       border-collapse:separate;
       width: 75%;
       margin: 0 auto 1rem auto;}
-
-/*propiedades de color de filas tabla*/ 
-#historial-envioss tr:nth-child(even){background-color: #f2f2f2;}
-
-/*propiedades de hover filas tabla*/ 
-#historial-envios tr:hover {background-color: #cae994;}
-
-/*propiedades de fila de titulo de tabla*/ 
-#historial-envios th {
-      padding-top: 0.5rem;
-      padding-bottom: 0.75rem;
-      text-align: left;
-      background-color: #7AB317;
-      color: #ffffff;}
 
 /*class de texto de titulo y parrafo*/
 .precios h2{font-size: 1.8rem;
@@ -111,23 +102,22 @@ li {text-align: left;
       margin: 0.5rem 0rem;}
 
 /*class del articulo de barra de seguimiento*/
-.search {
-      width: 74%;
-      display: flex;
-      position: relative;
-      margin: 1.5rem auto 1rem auto;}
+
 
 /*class de barra de seguimiento*/
-.searchTerm {
-      width: 95%;
-      border: 0.18rem solid #0B2E59;
+.searchTerm {width: 70%;
+      border: 0.15rem solid #0B2E59;
       border-right: none;
-      padding: 0.4rem;
-      height: 1.25rem;
+      padding: 0.313rem;
+      height: 2.3rem;
       border-radius: 0.313rem 0 0 0.313rem;
       outline: none;
-      color: #fdfdfd;}        
+      color: #fdfdfd;
+      margin: 0 0 0 15vw;
+      }        
 .searchTerm:focus{color: #7AB317;}
+
+
 
 /*class de botón de barra de seguimiento*/
 .searchButton {
@@ -147,15 +137,17 @@ li {text-align: left;
       border-bottom: 0.2rem #cae994 solid}
 
 /*propiedades de columna de "Mantenerse actualizado" de footer*/
-#actualizado {
-      width: 60%;
+.actualizado {width: 20vw;
       border: 0.188rem solid #fdfdfd;
-      border-right: none;
-      padding: 0.313rem;
+      padding: 0.91rem;
       height: 1.25rem;
       border-radius: 0.313rem 0 0 0.313rem;
-      outline: none;
-      color: #0B2E59;}
+      outline: none;}
+
+/*propiedades texto en barra de busqueda*/
+::placeholder{color: #b3b3b3;
+      opacity: 0.8;
+      font-size: 1vw;}
                 
 .email {
       width: 2.2rem;
@@ -172,7 +164,8 @@ li {text-align: left;
 .user-menu {
       color: #7AB317!important;
       font-size: 1.2rem;
-      margin: 2.5rem 4rem 0 0;}
+      margin: 2.5rem 1.5rem 0 0;
+padding-right: 1.5rem;}
         
 .user-menu-div {
       line-height: normal;
@@ -185,19 +178,14 @@ li {text-align: left;
 
 .fa-solid  {color: #ccc;}
 
-.grid-container {
-      display: grid;
-      grid-template-columns: 23% 58% 15% 2.5%;
-      grid-template-rows: 3rem 3.5rem 3rem 2rem 3rem 2rem 3rem;
-      background-color: #ffffff;
-      justify-content: space-evenly;
-      gap: 1rem;
-      margin: 0 15rem 0.813rem 15rem;}
+.grid-container {background-color: #ffffff;
+            margin: 0 10vw 2vh 12vw;
+            padding-top: 1rem;}
 
-.grid-item-titulo {grid-column: 1/5;
-      background-color: #7AB317;
+.grid-item-titulo {background-color: #7AB317;
 height: 2.8rem;
-border-radius: 0.4rem 0.4rem}
+border-radius: 0.4rem 0.4rem;
+width: 77vw;}
 
 .grid-cuadros{grid-column: 1/5;
       height: 2rem;}
@@ -218,7 +206,8 @@ line-height: 0.7rem;}
 
 .grid-container > .greater-than {display: flex;
       align-items: center;
-      margin: 0 0.5rem 0 0.5rem;}
+      margin: 0 0.5rem 0 0.5rem;
+      justify-self: right !important}
 
 .grid-container > .grid-item-titulo {display: flex;
             align-items: center;
@@ -316,7 +305,7 @@ border-radius: 5rem;}
 .titulos-envio {font-weight: 700;
 }
 
-.grid-envios > .titulos-envio {display: flex;
+.titulos-envio {font-size: 0.8vw;
       align-items: center;
       border-bottom-color: #ccc;}
 
@@ -348,3 +337,7 @@ border-radius: 5rem;}
       font-size: 0.85rem;}
 
       .grid-envios > .titulos-envio {border-bottom:0.2rem solid #cae994;}
+
+.navbar {padding: 0;}
+
+.mb-3 {margin-left: 1rem;}

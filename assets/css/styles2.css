@@ -27,14 +27,19 @@ h4 {color: #7AB317;
 border: #ffffff solid 0.15rem;}
 
 /*class de navbar*/   
-.login-container-fluid {width: 98.5vw;
+.login-container-fluid {width: 100vw;
+      height: 7rem; 
       background-color: #0B2E59;
-     display: flex;
-     justify-content:space-between; 
-     box-shadow: 0 1px 4px #ffffff;}
+      display: flex;
+      justify-content:space-between;
+     box-shadow: 0 0.063rem 0.25rem #ffffff;}
+
+.navbar {padding: 0}
 
 /*imagen de logo de navbar*/
-.logo {margin: 1rem 2rem 0.5rem 2rem;}
+.logo {margin: 1rem 0 1rem 2rem;}
+
+.logo-footer {margin: 1rem 0.5rem 0.5rem 0.5rem;} 
 
 /*propiedades texto de "Mantenerse actualizado"*/
 ::placeholder{color: #b3b3b3;
@@ -42,21 +47,22 @@ border: #ffffff solid 0.15rem;}
       font-size: 1rem;}
      
 /*class de footer*/  
-.login-container2 {background-color: #0B2E59;
+.container-fluid1 {background-color: #0B2E59;
       height: auto;
-      padding-left: 2.8rem;}
+      padding-left: 2.8rem;
+      padding-right: 2.8rem}
 
 /*propiedades lista general*/
 li {text-align: left;
       color: #ffffff;
       list-style:none}
 
-/*propiedades de los logos de redes sociales del footer*/
+/*propiedades de los logos de redes sociales del footer
 .list-group-item {
       list-style:none;
       background-color: #0B2E59;
       border-color: #0B2E59;
-      }
+      }*/
   
 /*propiedades de los enlaces de los enlaces del footer*/
 .column {
@@ -69,9 +75,9 @@ li {text-align: left;
       clear: both;} 
 
 /*propiedades de los .svg de logos de redes sociales del footer*/
-.logos-contactanos {width: 3.5rem;
-      float: unset;
-      margin-right: 1.5rem}
+.text-muted {
+      --bs-text-opacity: 1;
+      color: #7ab317!important;}
 
 /*class del botón del formulario de login*/
 .form-group button {background-color: #0B2E59;
@@ -81,6 +87,18 @@ li {text-align: left;
       margin: 0.5rem 0;
       border: none;
       font-size: 1.3rem;}
+
+      .col button {background-color: #0B2E59;
+            color: #ffffff;
+            border-radius: 1.2rem;
+            padding: 0.575rem 0.75rem;
+            margin: 0.5rem 0;
+            border: none;
+            width: 100%;
+            }
+
+.form-label {margin-bottom: 0.1rem;
+      margin-top: 0.1rem}
 
 /*propiedades texto del menú de login*/
 #banner p {text-align: center;
@@ -109,14 +127,14 @@ span.psw {float: right;}
 /*class del articulo del formulario de login*/
 .login-form {display: flex;
       align-items: center;
-      width: 40rem;
-      margin:0 3rem;}
+      width: 45rem;
+      margin-right: 5%;}
 
 /*class del menú de login*/ 
 .user-menu {
       color: #7AB317;
       font-size: 1.2rem;
-      margin: 2.5rem 5.5rem 0 0;}
+      margin: 2.5rem 2.5rem 0 0;}
 .user-menu-div {
       line-height: normal;
       margin-bottom: 0.75rem}
@@ -139,13 +157,16 @@ span.psw {float: right;}
       height: 3rem}
 
 /*propiedades de la imagen de la carta y paquete*/
-.letter-fluid {width: 100%;
+.letter-fluid {width: 90%;
       height: auto}
 
 /*class de textos del menú de login*/ 
 .psw a {text-decoration: none;
       color: #0B2E59;
       font-size: 1rem;}
+
+.footer {margin: 1rem 15rem 1rem 12rem;
+      }     
 
 /* propiedades de los inputs y fontawsome en formulario de login y register
 .form-group > i {padding: 0.75rem;
@@ -174,14 +195,12 @@ span.psw {float: right;}
       margin-top: 1rem;}
 
 /*propiedades de columna de "Mantenerse actualizado" de footer*/
-#actualizado {width: 60%;
+.actualizado {width: 20vw;
       border: 0.188rem solid #fdfdfd;
-      border-right: none;
-      padding: 0.92rem;
+      padding: 0.91rem;
       height: 1.25rem;
       border-radius: 0.313rem 0 0 0.313rem;
-      outline: none;
-      color: #0B2E59;}
+      outline: none;}
                 
 .email {width: 2.2rem;
       height: 2.2rem;
@@ -199,7 +218,7 @@ span.psw {float: right;}
       margin: 1.5rem auto 1rem auto;}   
 
 #subject {width: 100%; 
-      height: 15rem;}
+      height: 12rem;}
 
 .column1 {
       float: left;
@@ -209,7 +228,7 @@ span.psw {float: right;}
             display: table;
             clear: both;}
 
-.container > select {
+.form-control {
       width: 100%;
       border-radius: 2.5rem;
       border: 0.125rem solid #0B2E59;
@@ -218,7 +237,16 @@ span.psw {float: right;}
       margin: 0.5rem 0;
       font-size: 0.85rem;}
 
-.form-group > textarea {
+      .form-select {
+            width: 100%;
+            border-radius: 2.5rem;
+            border: 0.125rem solid #0B2E59;
+            color: #0B2E59;
+            padding: 0.75rem 1.25rem;
+            margin: 0.5rem 0;
+            font-size: 0.85rem;}
+
+#subject {
       width: 100%;
       border-radius: 1.25rem;
       background-color: transparent;
@@ -232,14 +260,11 @@ span.psw {float: right;}
 
 .margin {margin: 0 12rem 0 12rem;}
 
-.form-group > .modal-btn {background: #7ab317;}
+.card-body > .modal-btn {background: #7ab317;}
 
-.form-group > .prueba {
-      background: #7ab317;
-  }
+.prueba {background-color: #7ab317 !important}
 
 #cerrar {margin-bottom: 24rem;
-
 padding: 0.5rem;
 background-color: #0B2E59; 
 color: #ffffff;}
@@ -260,3 +285,8 @@ color: #ffffff;}
       border-radius: var(--bs-modal-border-radius);
       outline: 0;
   }
+
+.container-fluid {
+padding-right: 5rem;}
+
+.mb-3 {margin-left: 1rem;}

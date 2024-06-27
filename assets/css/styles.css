@@ -30,10 +30,12 @@ h4 {color: #7AB317;
        background-color: #0B2E59;
       display: flex;
       justify-content:space-between; 
-      box-shadow: 0 1px 4px #ffffff;}
+      box-shadow: 0 0.063rem 0.25rem #ffffff;}
 
 /*imagen de logo de navbar*/
 .logo {margin: 1rem 2rem 0.5rem 2rem;}
+
+.logo-footer {margin: 1rem 0.5rem 0.5rem 0.5rem;} 
 
 /*propiedades botón de "Ingresar" en index*/
 .boton {color: #ffffff;
@@ -102,7 +104,6 @@ font-size: 1rem;}
       top: 10%;
       left: 10%;
       text-align: justify;
-      
       color: #ffffff;
       line-height: 15%;}
 
@@ -138,15 +139,15 @@ svg {color: #ffffff;
       padding: 0.625rem;}
 
 /*propiedades de svg de botones de sucursal y ver envíos*/   
-.logo2 {width: 12rem;
-      height: 10rem;
+.logo2 {width: 90%;
+      height: 90%;
       border-radius: 2rem;
       box-shadow: 0rem 0.063rem 0.563rem 0 #b2b3b4b9;
       margin-left: 0.9rem;
       padding: 1.5rem;}
 
-.logo3 {width: 12rem;
-      height: 8rem;
+.logo3 {width: 90%;
+      height: 90%;
       border-radius: 2rem;
       box-shadow: 0rem 0.063rem 0.563rem 0 #b2b3b4b9;
       margin-left:5rem;
@@ -192,23 +193,21 @@ li {text-align: left;
 
 
 /*propiedades de los .svg de logos de redes sociales del footer*/
-.logos-contactanos {width: 3.5rem;
-      float: unset;
-      margin-right: 1.5rem}
+.text-muted {
+      --bs-text-opacity: 1;
+      color: #7ab317!important;}
 
 /* Los botones reciben el efecto que su opacidad desciende cuando son elegidos */
 button:hover {opacity: 0.8;}
 
 
 /*propiedades de columna de "Mantenerse actualizado" de footer*/
-#actualizado {width: 60%;
+.actualizado {width: 20vw;
       border: 0.188rem solid #fdfdfd;
-      border-right: none;
-      padding: 0.92rem;
+      padding: 0.91rem;
       height: 1.25rem;
       border-radius: 0.313rem 0 0 0.313rem;
-      outline: none;
-      color: #0B2E59;}
+      outline: none;}
                 
 .email {width: 2.2rem;
       height: 2.2rem;
@@ -237,7 +236,7 @@ button:hover {opacity: 0.8;}
 .user-menu {
       color: #7AB317!important;
       font-size: 1.2rem;
-      margin: 2.5rem 4rem 0 0;}    
+      margin: 2.5rem 2.5rem 0 0;}    
 .user-menu-div {
       line-height: normal;
       margin-bottom: 0.75rem}
@@ -250,7 +249,7 @@ span.psw {float: right;}
 /*class container de camión*/ 
 .container-camion {margin-left: auto;
       margin-right: auto;
-      margin-top: 2rem;}
+      margin: 2rem 0;}
 
 /*tamaño de imagen del camión de envío*/
 .camion {width: 100%;}
@@ -262,9 +261,19 @@ span.psw {float: right;}
       
 /*class container de GRID*/
 .grid-container {background-color: #ffffff;
-      margin: 0 12rem 0 12rem;}
+      margin: 0 2vw 0 12vw;
+width: 80vw;}
 
 /*class de titulo de GRID*/
+.footer {margin: 1rem 15rem 1rem 12rem;
+}
+
+.fila {margin-bottom: 0.8rem;}
+
+.texto-envio {height: 2rem;}
+
+.logo-envios {width: 5rem;}
+
 .grid-titulo {font-size: 1.1rem;
       color: #ffffff;
       font-weight: 700;
@@ -277,22 +286,25 @@ span.psw {float: right;}
       line-height: 0.7rem;}
 
 /*class y propiedades de texto de GRID*/
-.grid-texto {border-bottom: 0.2rem solid #cae994;}
+.grid-texto {border-bottom: 0.2rem solid #cae994;
+      margin-top: 0.8rem;
+padding-bottom: 0.8rem;}
 
 .grid-container > .grid-texto {display: flex;
       align-items: center;
       padding: 0 1rem 0 1rem;}
 
 /*class de grid de "infomación de envío"*/
-.grid-info {background-color: #ffffff;
-      margin: 0 12rem 0 12rem;
-padding-top: 1rem;}
+.info-envio {margin: 0 2vw 1.5rem 13vw;
+      padding-top: 1rem;}
 
-/*class de texto de grid de "infomación de envío"*/
-.grid-info > .grid-info-envio {display: flex;
-      align-items: center;
-      font-size: 1.5rem;
-      font-weight: 700;}
+.historial-envios {width: 95%;
+      margin-left: 5rem;}
+
+.container-fluid1 {background-color: #0B2E59;
+      height: auto;
+      padding-left: 2.8rem;
+      padding-right: 2.8rem}
 
 .grid-info-envio {grid-column: 1/2;}
 
@@ -330,6 +342,16 @@ padding-top: 1rem;}
 
 /*propiedades de select de localidad*/
 #location {width: 25rem;
+      margin: 0.625rem 0.5rem 0.625rem 0;
+      outline: 0;
+      background: #ffffff;
+      color: #999898;
+      border: 0.125rem solid #0B2E59;
+      padding: 0.5rem;
+      border-radius: 0.563rem;
+      font-size: 1rem;} 
+
+#localidad {width: 25rem;
       margin: 0.625rem 0.5rem 0.625rem 0;
       outline: 0;
       background: #ffffff;
@@ -434,6 +456,7 @@ text-align: center;
 color: #0B2E59;
 margin-top: auto;}
 
+
 /*class del grip de los precios*/
 .grid-precios {width: 30vw;
       display: grid;
@@ -454,3 +477,16 @@ body {width: 98.5vw;}
 border-color: unset;}
 
 .navbar {padding: 0;}
+
+.mb-3 {margin-left: 1rem;}
+
+.horizontal-scrollable > .row { 
+      overflow-x: auto; 
+      white-space: nowrap; 
+  } 
+
+    
+  .horizontal-scrollable > .row > .col-xs-4 { 
+      display: inline-block; 
+      float: none; 
+  } 

@@ -4,200 +4,240 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="XPress, tu correo privado seguro, rápido y facil de usar.">
-    <meta name="keywords" content="sistema tracking, envios, correo,
-    tracking">
+    <meta name="description" content="XPress, tu correo privado seguro, rápido y fácil de usar.">
+    <meta name="keywords" content="sistema tracking, envios, correo, tracking">
     <meta name="author" content="Daniel Vega">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="assets\img\favicon\favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets\img\favicon\favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/fd20449e17.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;0,700;1,100;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets\css\styles3.css">    
+    <link rel="stylesheet" type="text/css" href="assets\css\styles.css">  <!-- Usa styles.css -->     
     <title>XPress | Tus envios llegan mas rápido</title>
 </head>
 <body>
     <header> <!-- Logo e información del sitio -->
-       <nav >
-      <div class="login-container">
-            <a title="ir al home" href="index.html"><img class="logo" src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo" ></a>
-            <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html">
-            <i class="far fa-user-circle"></i> Juan Pérez </a>
-        </div>
+        <nav class="navbar">
+            <div class="login-container-fluid w-100">
+                <a class="navbar-brand" href="index.html">
+                <img src="assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"  class="d-inline-block logo w-50"></a> <!-- Logo y link al index -->
+                <a id="personas-header" ng-if="estaLogueado()" ui-sref="base.miPerfil" class="user-menu right display-none-mob ng-binding ng-scope" href="dashboard.html"> <!-- Usario registrado / link a dashboard -->
+                <i class="far fa-user-circle"></i> Juan Pérez </a>
+            </div>
     </nav>  
         </header>
 <!-- Barra de navegación -->
 <main >
-    <section >
-        <article>
-            <form action="#" method="post">
+    <section class="container-fluid">
             <p>Ingresá y seguí tus envíos, las 24 horas, desde donde estés.</p>
-                <article>
-                        <input type="text" placeholder="Ingresá tu búsqueda">
-                    <button type="submit" class="searchButton">
-                    <i class="fa fa-search"></i> </button>
-                    <a title="Exportar" href="#"><img class="exportar-logo" src="assets/img/imagenes/exportar.svg" alt="imagen para el logo" ></a>
-                                    
-                    <ul >
-                         <li><form>
-                            <label for="state"><b>Tu Ubicación</b></label>
-                            <select name="provincia" id="location">
-                                      <option  value="selecciona" class="oo">Seleccione una Provincia</option>
-                                      <option value="caba">Ciudad Autonoma de Buenos Aires</option>
-                                      <option value="buenos-aires">Buenos Aires</option>
-                                      <option value="catamarca">Catamarca</option>
-                                      <option value="chaco">Chaco</option>
-                                      <option value="chubut">Chubut</option>
-                                      <option value="cordoba">Córdoba</option>
-                                      <option value="corrientes">Corrientes</option>
-                                      <option value="entre-rios">Entre Ríos</option>
-                                      <option value="formosa">Formosa</option>
-                                      <option value="jujuy">Jujuy</option>
-                                      <option value="la-pampa">La Pampa</option>
-                                      <option value="la-rioja">La Rioja</option>
-                                      <option value="mendoza">Mendoza</option>
-                                      <option value="misiones">Misiones</option>
-                                      <option value="neuquen">Neuquen</option>
-                                      <option value="rio-negro">Rio Negro</option>
-                                      <option value="salta">Salta</option>
-                                      <option value="san-juan">San Juan</option>
-                                      <option value="san-luis">San Luis</option>
-                                      <option value="santa-cruz">Santa Cruz</option>
-                                      <option value="santa-fe">Santa Fe</option>
-                                      <option value="sgo-estero">Santiago del Estero</option>
-                                      <option value="tierra-fuego">Tierra del Fuego</option>
-                                      <option value="tucuman">Tucuman</option>
-                            </select>
-                            <li><form method="post" action="/send/">Fecha desde:
-                            <input type="date" value="dd-mm-yyyy">
-                        <li<form method="post" action="/send/">Fecha desde:
-                            <input type="date" value="dd-mm-yyyy">
-                       
-                        
-                    </article>
-                </section>  
-                <div class="grid-envios-titulo">Envíos en total: 497</div>
-                <article class="grid-envios">
-                    <label class="titulos-envio">
-                    <input type="checkbox" checked="checked"></label>
-                    <div class="titulos-envio"> Acciones </div>
-                    <div class="titulos-envio"> Nº Seguimiento</div>
-                    <div class="titulos-envio"> Nº Operación</div>
-                    <div class="titulos-envio"> Fecha alta</div>
-                    <div class="titulos-envio"> Estado envío</div>
-                    <div class="titulos-envio"> Insumo</div>
-                    <div class="titulos-envio"> Destinatario</div>
-                    <div class="titulos-envio"> Suc. de Retiro</div>
-                    <!-- <div class="titulos-envio"> Detalles</div> -->
-                    
-                    <label class="texto-envio">
-                        <input type="checkbox"></label> 
-                    <div class="texto-envio"> <img class="logo-envios" src="assets/img/imagenes/logos-accciones2.svg" alt="imagen para el logo"> </div>
-                    <div > </div>
-                    <div class="texto-envio"> 3558312</div>
-                    <div > </div>
-                    <div > </div>
-                    <div class="texto-envio"> Nacional</div>
-                    <div class="texto-envio"> Maite Fernández</div>
-                    <div class="texto-envio"> 9 DE JULIO</div>
-                    
-                    <label class="texto-envio">
-                        <input type="checkbox"></label>
-                    <div class="texto-envio"> <img class="logo-envios" src="assets/img/imagenes/logos-accciones.svg" alt="imagen para el logo"> </div>
-                    <div class="texto-envio"> 360000853360880</div>
-                    <div class="texto-envio"> 3558296</div>
-                    <div class="texto-envio"> 12/04/2023 11:07:33</div>
-                    <div class="texto-envio"> Nuevo</div>
-                    <div class="texto-envio"> Nacional</div>
-                    <div class="texto-envio"> Marina Pratto</div>
-                    <div class="texto-envio"> SANTA FE</div>
-                    
-                    <label class="texto-envio">
-                        <input type="checkbox"></label>
-                    <div class="texto-envio"> <img class="logo-envios" src="assets/img/imagenes/logos-accciones2.svg" alt="imagen para el logo"> </div>
-                    <div class="texto-envio"> +00000034370970</div>
-                    <div class="texto-envio"> 604350</div>
-                    <div class="texto-envio"> 15/07/2023 05:07:08</div>
-                    <div class="texto-envio"> Nuevo</div>
-                    <div class="texto-envio"> Nacional</div>
-                    <div class="texto-envio"> Leonel N. Lorenzo</div>
-                    <div class="texto-envio"> TUCUMAN</div>
 
-                    <label class="texto-envio">
-                        <input type="checkbox"></label>
-                    <div class="texto-envio"> <img class="logo-envios" src="assets/img/imagenes/logos-accciones1.svg" alt="imagen para el logo"> </div>
-                    <div class="texto-envio"> </div>
-                    <div class="texto-envio"> 3755053</div>
-                    <div > </div>
-                    <div > </div>
-                    <div class="texto-envio"> Nacional</div>
-                    <div class="texto-envio"> Testing Testing</div>
-                    <div class="texto-envio"> LA PLATA (CALLE 2)</div>
-                                        
-                    <label class="texto-envio">
-                        <input class="prue" type="checkbox"></label>
-                    <div class="texto-envio"> <img class="logo-envios" src="assets/img/imagenes/logos-accciones2.svg" alt="imagen para el logo"> </div>
-                    <div class="texto-envio"> +0000041350420</div>
-                    <div class="texto-envio"> 3553297</div>
-                    <div class="texto-envio"> 09/04/2021 06:04:04</div>
-                    <div class="texto-envio"> Rechazado</div>
-                    <div class="texto-envio"> CD Nacional</div>
-                    <div class="texto-envio"> Maximiliano Camasta</div>
-                    <div class="texto-envio"> AZUL</div>
-                    
-                </article>
-                
-    </main>
-    <!-- Pie de página -->
-    <footer class="login-container2">
-        <section class="row">     
-        <article class="column">
-            <h4>¿Qué necesitás hacer?</h4>
-            <ul >
-                <li><a href="sucursal.html">Buscar sucursal</a></li>
-                <li><a href="envios.html">Ver mis envíos</a></li>
-                <li><a href="contacto.html">Contactanos</a></li>
-            </ul>
-        </article>
-        <article class="column">
-            <h4>Nosotros</h4>
-            <ul>
-                <li><a href="#">Segmentos</a></li>
-                <li><a href="#">Sustentabilidad</a></li>
-                <li><a href="#">Trabajá con nosotros</a></li>
-            </ul>
-        </article>
-        <article class="column">
-            <h4>Ayuda</h4>
-            <ul>
-                <li><a href="#">Preguntas frecuentes</a></li>
-                <li><a href="tel:+5408001221112">0800-122-1112</a></li>
-                <li><a href="mailto:atenciondigital@xpress.com?Subject=Aquí%20el%20asunto%20del%20mail">atenciondigital@xpress.com</a></li>
-            </ul>
-        </article>
-         <article class="column">
-            <h4>Mantenerse actualizado</h4>
-        <article class="search"><input type="email" id="actualizado" placeholder="Ingresá tu E-mail">
-        <button type="submit" class="email">
-        <i class="fa-solid fa-paper-plane"></i>
-        </button>
-        </article>
-        </article>
-         <hr class="hr-index">
-        <div>
-           <ul>
-                <li class="li-logos"><a href="https://www.youtube.com" target="_blank"><img class="logos-contactanos" src="assets/img/imagenes/YouTube.png" alt="YouTube">
-                </a></li> 
-                <li class="li-logos"><a href="https://www.instagram.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/instagram.svg" alt="Instagram">
-                </a></li>
-                <li class="li-logos"><a href="https://twitter.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/X_logo.svg" alt="X">
-                </a></li>
-                <li class="li-logos"><a href="https://www.facebook.com" target="_blank"><img class="logos-contactanos" src="./assets/img/imagenes/facebook.svg" alt="Facebook">
-                </a></li>    
-            </ul>
-            <a title="Volver a Inicio" href="index.html"><img class="logo" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
-        </div>
+            <form class="row row-cols-lg-auto g-3 align-items-center">
+              <div class="col-12">
+                <label class="visually-hidden" for="inlineFormInputGroupUsername">Ingresá el número de seguimiento</label>
+                <div class="input-group">
+                  <div class="input-group-text"><i class="fa fa-search"></i></div>
+                  <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Ingresá el número de seguimiento">
+                </div>
+              </div>
+            
+              <div class="col-12">
+                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                <select class="form-select" id="inlineFormSelectPref">
+                  <option selected>Choose...</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+            
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                  <label class="form-check-label" for="inlineFormCheck">
+                    Remember me
+                  </label>
+                </div>
+              </div>
+            
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+
+            <article class="row">
+            <div class="col-3">
+              <input type="text" class="form-control" placeholder="Ingresá el número de seguimiento" aria-label="Ingresá el número de seguimiento" aria-describedby="button-addon2">
+                  <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i><!-- botón de barra de seguimiento -->
+                    </button>
+                </div>
+
+                <div class="input-group mb-3">
+                  
+                </div>
+
+                    <div class="col-1">
+                      <a title="Exportar" href="#"><img class="exportar-logo" src="assets/img/imagenes/exportar.svg" alt="imagen para el logo" ></a>
+                    </div>
+                    <div class="col-1">
+                      <button type="submit" class="btn btn-secondary" href="#"><i class="fa-solid fa-gear"></i></button>
+                    </div>
+                <ul>
+                  <li><form method="post" >Fecha desde:
+                  <input type="date" value="dd-mm-yyyy">
+                  <li><form method="post" action="/send/">Fecha hasta:
+                  <input type="date" value="dd-mm-yyyy">
+                </ul>
+            </article>  
+    </section>  
+
+    <section class="container-fluid historial-envios horizontal-scrollable">
+      <article class="row">
+      <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+      <label class="fs-6 mb-2 fw-bolder btn btn-outline-success" for="success-outlined">Envíos en total: 497</label>   
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <td scope="col">#</td>
+          <th scope="col">Acciones</th>
+          <th scope="col">Nº Seguimiento</th>
+          <th scope="col">Nº Operación</th>
+          <th scope="col">Fecha alta</th>
+          <th scope="col">Estado envío</th>
+          <th scope="col">Insumo</th>
+          <th scope="col">Destinatario</th>
+          <th scope="col">Suc. de Retiro</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <td scope="row"><label><input type="checkbox"></label></td>
+          <td class="col"><img class="logo-envios" src="assets/img/imagenes/logos-accciones2.svg" alt="imagen para el logo"></td>
+          <td class="col"> </td>
+          <td class="col">3558312</td>
+          <td class="col"> </td>
+          <td class="col"> </td>
+          <td class="col">Nacional</td>
+          <td class="col">Maite Fernández </td>
+          <td class="col">9 DE JULIO</td>
+        </tr>
+        <tr>
+          <th scope="row"><label><input type="checkbox"></label></th>
+          <td class="col"><img class="logo-envios" src="assets/img/imagenes/logos-accciones.svg" alt="imagen para el logo"></td>
+          <td class="col">360000853360880</td>
+          <td class="col">3558296</td>
+          <td class="col">12/04/2023 11:07:33</td>
+          <td class="col">Nuevo</td>
+          <td class="col">Nacional</td>
+          <td class="col">Marina Pratto</td>
+          <td class="col">SANTA FE</td>
+        </tr>
+        <tr>
+          <th scope="row"><label><input type="checkbox"></label></th>
+          <td class="col"><img class="logo-envios" src="assets/img/imagenes/logos-accciones2.svg" alt="imagen para el logo"></td>
+          <td class="col">+00000034370970</td>
+          <td class="col">604350</td>
+          <td class="col">15/07/2023 05:07:08</td>
+          <td class="col">Nuevo</td>
+          <td class="col">Nacional</td>
+          <td class="col">Leonel N. Lorenzo</td>
+          <td class="col">TUCUMAN</td>
+        </tr>
+        <tr>
+          <th scope="row"><label><input type="checkbox"></label></th>
+          <td class="col"><img class="logo-envios" src="assets/img/imagenes/logos-accciones1.svg" alt="imagen para el logo"></td>
+          <td class="col"></td>
+          <td class="col">3755053</td>
+          <td class="col"></td>
+          <td class="col"></td>
+          <td class="col">Nacional</td>
+          <td class="col">Testing Testing</td>
+          <td class="col">LA PLATA (Calle 2)</td>
+        </tr>
+        <tr>
+          <th scope="row"><label><input type="checkbox"></label></th>
+          <td class="col"><img class="logo-envios" src="assets/img/imagenes/logos-accciones2.svg" alt="imagen para el logo"></td>
+          <td class="col">+0000041350420</td>
+          <td class="col">3553297</td>
+          <td class="col">09/04/2021 06:04:04</td>
+          <td class="col">Rechazado</td>
+          <td class="col">CD Nacional</td>
+          <td class="col">Maximiliano Camasta</td>
+          <td class="col">AZUL  </td>
+        </tr>
+      </tbody>
+    </table>
+    </article>
         </section> 
+    </main>
+
+  <!-- Pie de página -->
+    <!-- Texto de soluciones personalizadas y botones de sucursales y ver mis envios --> 
+    <footer class="login-container2"> <!-- class de footer -->
+      <section class="row"> 
+          <article class="py-3">
+            <div class="row">
+              <div class="col-5 col-sm-5 col-md-3 col-lg-2 mb-3">
+                <h4>¿Qué necesitás hacer?</h4> <!-- enlaces de footer -->    
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="sucursal.html" class="nav-link p-0 text-light">Buscar sucursal</a></li>
+                      <li class="nav-item mb-2"><a href="ver-envios.html" class="nav-link p-0 text-light">Ver mis envíos</a></li>
+                      <li class="nav-item mb-2"><a href="contacto.html" class="nav-link p-0 text-light">Contactanos</a></li>
+                    </ul>
+            </div>
+  
+            <div class="col-5 col-sm-5 col-md-3 col-lg-2 mb-3">
+                <h4>Nosotros</h4>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Segmentos</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Sustentabilidad</a></li>
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Trabajá con nosotros</a></li>
+                    </ul>
+            </div>
+  
+            <div class="col-8 col-sm-5 col-md-4 col-lg-3 mb-3">
+                <h4>Ayuda</h4>
+                    <ul class="nav flex-column">
+                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Preguntas frecuentes</a></li>
+                      <li class="nav-item mb-2"><a href="tel:+5408001221112" class="nav-link p-0 text-light">0800-122-1112</a></li>
+                      <li class="nav-item mb-2"><a href="mailto:atenciondigital@xpress.com?Subject=Aquí%20el%20asunto%20del%20mail" class="nav-link p-0 text-light">atenciondigital@xpress.com</a></li>
+                    </ul>
+            </div>
+  
+            <div class="col-8 col-sm-5 col-md-3 offset-md-2 col-lg-3 mb-3">
+                <form>
+                <h4>Mantenerse actualizado</h4> <!--Mantenerse actualizado-->  
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-1">
+                      <label for="newsletter1" class="visually-hidden">Ingresá tu E-mail</label>
+                      <input type="text" class="actualizado" placeholder="Ingresá tu E-mail" id="newsletter1" name="newsletter1">
+                      <button type="submit" class="email">
+                      <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                </form>
+            </div>
+            </div>
+          </article>
+      </section>      
+        <!-- links a redes sociales -->
+        <section class="container-fluid1">
+          <article class="d-flex flex-wrap justify-content-between align-items-center py-2 my-2 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="index.html" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <img class="d-inline-block logo-footer w-50" src="./assets/img/imagenes/logo_xpress-B.png" alt="imagen para el logo"></a>
+            </div>
+        
+                  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-muted" href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-square-instagram fa-xl"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://twitter.com" target="_blank"><i class="fa-brands fa-square-x-twitter fa-xl"></i></a></li>
+                    <li class="ms-3"><a class="text-muted" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-xl"></i> </a></li>                                              
+                  </ul>
+          </article>
+      </section>    
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
